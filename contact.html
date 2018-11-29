@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>联系客服</title>
+		<style>
+			
+			.nav{
+			background: rgb(245,245,245);
+			padding-top: 0.5%;
+			padding-bottom: 0.5%;
+			}
+			.nav a{
+			font-size: 13px;
+			text-decoration: none;
+			color:rgb(108,108,108);
+			
+			}
+			.nav ul li {
+				list-style: none;
+				float: left;
+				width: 80px;
+			  margin-left: 1.5%;
+			
+			}
+			
+			ul li ul{
+				position: absolute;
+				z-index: 20;
+				left: 31%;
+				margin-top:0.1%;
+				width: 800px;
+				height: 80px;
+				display: none;
+			}
+			.nav ul li ul li{
+				display: block;
+				width: 200px;
+				height:40px;
+				padding-top:1.5%;
+				border: 1px solid rgb(238,238,238);
+				background: whitesmoke;
+				text-align: center;
+				margin-left: 0.5%;
+			}
+			ul li ul li:hover{
+				cursor: pointer;
+				
+			}
+			.nav a:hover{
+			color:rgb(255,68,0);
+			text-decoration: none;
+			}
+	       .users{
+			   width: 220px;
+			   height: 50px;
+			   background: rgb(236,108,0);
+			   padding-left: 2.5%;
+			   padding-top: 0.8%;
+			   color: white;
+			   cursor: pointer;
+			   position: absolute;
+			   left: 33%;
+			   top: 50%;
+			   border-top-left-radius: 20px;
+			   border-top-right-radius: 25px;
+			   border-bottom-right-radius: 25px;
+		   }
+		   .users i{
+			   font-size: 18px; 
+			   
+		   }
+		   .users:hover{
+			   background: rgb(255,146,54);
+		   }
+		   .business{
+		   	width: 220px;
+		   	height: 50px;
+		   	background: rgb(64,187,230);
+		   	padding-left: 2.5%;
+		   	padding-top: 0.8%;
+		   	color: white;
+		   	cursor: pointer;
+		   	position: absolute;
+		   	left: 53%;
+		   	top: 50%;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 25px;
+			border-bottom-right-radius: 25px;
+		   }
+		   .business:hover{
+			   background: rgb(70,188,255);
+		   }
+		   .business i{
+		   	font-size: 18px; 
+		   }
+		   .telephone{
+				 clear:both;
+				 background:rgb(245,245,245);
+				 margin-left: 5%;
+				 margin-right: 5%;
+				 padding-top: 1%;
+				 padding-bottom: 1%;
+			 }
+			 h2{
+				 margin-left: 5%;
+			 }
+			 .telephone i{
+				 margin-right: 3%;
+				 height: 50%;
+				 font-size: 70px;
+				 margin-left: 20%;
+				 color: rgb(255,146,54);
+				 padding-top: 1%;
+				
+			 }
+			.telephone .spans{
+				font-size: 20px;
+				margin-top: 2%;
+				position: absolute;
+				margin-left: -1%;
+			}
+			.telephone button{
+				position: absolute;
+				margin-left: 30%;
+				margin-top: 2%;
+				width: 10%;
+				height: 5%;
+				background: rgb(255,103,0);
+				outline: none;
+				border: none;
+				color: white;
+			}
+			.telephone button:hover{
+				background: rgba(255,103,0,0.9);
+			}
+			.hotline{
+				clear: both;
+				margin-top: 1%;
+				height: 50%;
+				margin-left: 5%;
+				margin-right: 5%;
+				background: rgb(245,245,245);
+				margin-bottom: 2%;
+				padding-bottom: 2%;
+				padding-top: 2%;
+			}
+			.hotline i{
+				margin-right: 3%;
+				height: 50%;
+				font-size: 70px;
+				margin-left: 20%;
+				margin-right: -2%;
+				
+				padding-top: 1%;
+			}
+			.demo3{
+				width: 100%;
+				height:auto;
+				margin-top: 1%;
+				padding-top: 2%;
+			}
+			.service{
+				border:4px solid rgb(254,46,95);
+				margin-bottom: 2%;
+				cursor: pointer;
+			}
+			.footer{
+			margin-left: 7%;
+			float: left;
+			
+			}
+			ul li{
+				list-style-type:none;
+			}
+			ul li a{
+				text-decoration: none;
+				color: grey;
+			}
+			ul li a:hover{
+				text-decoration: none;
+				color:red;
+			}
+			.test{
+				border: 1px solid rgb(245,245,245);
+				overflow: hidden;
+				text-align: center;
+				padding-top: 0.3%;
+				cursor:pointer;
+			}
+			.test a{
+				
+				font-size: 13px;
+				color:gray;
+				
+			}
+			.test a:hover{
+				text-decoration: none;
+				color:orangered;
+			}
+			.test1{
+				border: 1px solid rgb(245,245,245);
+				overflow: hidden;
+				text-align: center;
+				/*padding-top: 0.3%;*/
+				margin: 0;
+				padding-bottom: 0.3%;
+				cursor:pointer;
+			}
+			.test1 a{
+				font-size: 13px;
+				color:white;
+				
+			}
+			.test1 a:hover{
+				text-decoration: none;
+				color: white;
+			}
+			.lxkf{
+				width:150px;
+				height: 40px;
+				border: 1px solid rgb(255,103,0);
+				text-align: center;
+				padding-top: 5%;
+				color:rgb(255,103,0);
+				
+			}
+			.lxkf a{
+				color:rgb(255,103,0);
+			}
+			.footer li .lxkf:hover{
+				background: rgb(242,88,7);
+				color:white;
+				
+				
+			}
+			.lxkf a:hover{
+				color:white;
+				
+			}
+			.wwxk img:hover{
+			cursor: pointer;
+			}
+			.spantop{
+			float: left;
+			color:rgb(164,164,164);
+			margin-top: -4%;
+			}
+			.spanbottom{
+			float: left;
+			color:rgb(164,164,164);
+			margin-top: -2.5%;
+			
+			}
+			.colorspan{
+			cursor: pointer;
+			}
+			.colorspan:hover{
+			color: rgb(255,0,0);
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/iconfont1.css">
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	  <script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+		<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/editTable.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/editTable.js"></script>
+
+	</head>
+	
+	<body>
+		<div class="nav">
+			<ul>
+				<li><a href="index.html" style="margin-left: 10%;">首页</a></li>
+				<li><a href="#" style="margin-left: 1%;">商品分类</a></li>
+				<li><a href="#" style="margin-left: 1%;">商家支持</a></li>
+				<li><a href="#" style="margin-left: 1%;">粉丝俱乐部</a></li>
+				<li><a href="service.html" style="margin-left: 1%;">帮助中心</a></li>
+				<li  class="wzdh">
+					<a id="wzdh" href="#" style="margin-left: 0%;">网站导航⬇</a>
+					<ul>
+						 <a href="http://www.baidu.com"><li>百度</li></a>
+						 <a href="http://www.qq.com"><li>腾讯网</li></a>
+						 <a href="http://www.tmall.com"><li>天猫</li></a>
+						 <a href="http://www.taobao.com"><li>淘宝</li></a>
+						 <a href="http://www.jd.com"><li>京东</li></a>
+						 <a href="http://www.xiaomi.com"><li>小米</li></a>
+						 <a href="http://www.vmall.com"><li>华为</li></a>
+						 <a href="http://www.gome.com.cn"><li>国美</li></a>
+						 <a href="http://www.sina.com"><li>新浪</li></a>
+						 <a href="http://www.douyu.com"><li>斗鱼</li></a>
+						 <a href="http://www.huya.com"><li>虎牙</li></a>
+						 <a href="http://www.bilibili.com"><li>哔哩哔哩</li></a>
+					</ul>
+					</li>
+				<li><a href="#" style="margin-left: 1%;">更多精彩</a></li>
+				<li><a href="#" style="margin-left: 1%;">手机版</a></li>
+				<li><a id="dl" href="#" style="margin-left: 31%;">登录</a></li>
+				<li><a id="tc" href="#" style="margin-left: 1%;display: none;">退出</a></li>
+				<li><a id="zc" href="register.html" target="_blank" style="margin-left: 1%;">注册</a></li>
+				<li><a href="#" style="margin-left: 1%;">我的订单</a></li>
+				<li><a id="topgwc" href="#" style="margin-left: 1%;"><span class="glyphicon glyphicon-shopping-cart"></span>购物车</a></li>	
+			</ul>
+			
+		
+		</div>
+		
+  <img src="img/contact%20(2)_1.jpg" width="90%" height="30%" style="margin-left: 5%;" />
+  
+  <div class="users">
+	  <i class="iconfont icon-user-5"> 消费者服务中心</i>
+  </div>
+  <div class="business">
+	   <i class="iconfont icon-shangjia"> 商家服务中心</i>
+  </div>
+	<h2 >联系客服</h2>
+	<div class="telephone">
+	    <i class="iconfont icon-user-5">  </i>
+		<span class="spans">7天*24小时</span>
+		<button>立即咨询</button><br />
+		<span style="position: absolute;margin-top: -2.4%;margin-left: 25.8%;color: rgb(153,153,153);">专业客服在线对话，为您解决遇到的问题</span>
+	</div>
+	
+    <div class="hotline">
+		<i style="color: rgb(80,192,233);" class="iconfont icon-dianhua"></i>
+		<i style="color: rgb(255,93,89);" class="iconfont icon-dianhua"></i>
+		<i style="color: rgb(202,124,255);" class="iconfont icon-dianhua"></i><br />
+		<span style="font-size: 20px;margin-left: 19.5%;">商城热线</span>
+		<span style="font-size: 20px;margin-left: 17.5%;">金服热线</span>
+		<span style="font-size: 20px;margin-left: 17.5%;">移动热线</span><br />
+		<span style="color: black;margin-left: 15%;">手机、电视盒子、PC、智能硬件等</span>
+		<span style="color: black;margin-left: 9%;">贷款、保险、理财、钱包</span>
+		<span style="color: black;margin-left: 12%;">任我行、吃到饱、米粉卡等</span><br />
+		<span style="color: rgb(255,103,0);margin-left: 18.5%;font-size: 18px;">400-100-5678</span>
+		<span style="color: rgb(255,103,0);margin-left: 15.5%;font-size: 18px;">400-100-3399</span>
+		<span style="color: rgb(255,103,0);margin-left: 14.5%;font-size: 18px;">400-922-3838</span><br />
+		<span style="margin-left: 20%;">8:00-18:00</span>
+		<span style="margin-left: 18.5%;">9:00-18:00</span>
+		<span style="margin-left: 18.5%;">08:00-18:00</span>
+	</div>
+	<hr />
+	<div class="demo3" style="clear: both;">
+	
+	<div style="height: 100%; width:100%;margin-left: 10%;">
+	
+		<div class="service" style="width: 50px;height:50px;border-radius:25px;margin-left: 60px;float: left;">	
+		
+			<p style="font-size: 30px;margin-left: 5px;color: rgb(254,46,95);">优</p>
+		<div style="position: absolute;margin-top: -4.5%;margin-left: 4%;">
+			<h4>品质保障</h4>
+				<p style="font-size: 17px;color: grey;">品质护航，购物无忧</p>
+		</div>
+		</div>
+		<div class="service" style="width: 50px;height:50px;border-radius:25px;margin-left: 15%;float: left;">	
+		
+			<p style="font-size: 30px;margin-left: 5px;color: rgb(254,46,95);">七</p>
+		<div style="position: absolute;margin-top: -4.5%;margin-left: 4%;">
+			<h4>七天无理由退换货</h4>
+				<p style="font-size: 17px;color: grey;">为您提供售后无忧保障</p>
+		</div>
+		</div>
+		<div class="service" style="width: 50px;height:50px;border-radius:25px;margin-left: 15%;float: left;">	
+		
+			<p style="font-size: 30px;margin-left: 5px;color: rgb(254,46,95);">特</p>
+		<div style="position: absolute;margin-top: -4.5%;margin-left: 4%;">
+			<h4>特色服务体验</h4>
+				<p style="font-size: 17px;color: grey;">为您呈现不一样的服务</p>
+		</div>
+		</div>
+		<div class="service" style="width: 50px;height:50px;border-radius:25px;margin-left: 15%;float: left;">	
+		
+			<p style="font-size: 30px;margin-left: 5px;color: rgb(254,46,95);">网</p>
+		<div style="position: absolute;margin-top: -4.5%;margin-left: 4%;">
+			<h4>448家维修网点</h4>
+				<p style="font-size: 17px;color: grey;">全国联保</p>
+		</div>
+		</div>
+	
+	</div>
+	
+	<div class="active" style="clear: both;margin-top:3%;">
+		<hr />
+	
+		<ul class="footer">
+			<li><big><b>帮助中心</b></big></li>
+			<li><a href="#">购物指南</a></li>
+			<li><a href="#">订单操作</a></li>
+			<li><a href="#">购物管理</a></li>					 				 	
+		</ul>
+		<ul class="footer">
+			<li><big><b>购物相关</b></big></li>
+			<li><a href="#">配送方式</a></li>
+			<li><a href="#">常见问题</a></li>
+			<li><a href="#">购物指南</a></li>
+		</ul>	
+		<ul class="footer">
+			<li><big><b>保修与退换货</b></big></li>
+			<li><a href="#">保修政策</a></li>
+			<li><a href="#">退换货政策</a></li>
+			<li><a href="#">退换货流程</a></li>
+			
+		</ul>
+		<ul class="footer">
+			<li><big><b>支付方式</b></big></li>
+			<li><a href="#">信用卡</a></li>
+			<li><a href="#">快捷支付</a></li>
+			<li><a href="#">货到付款</a></li>
+		</ul>		
+		<ul class="footer">
+			<li><big><b>关注我们</b></big></li>
+			<li><a href="#">新浪微博</a></li>
+			<li><a href="#">腾讯微博</a></li>
+			<li><a href="#">官方微信</a></li>
+			
+		</ul>
+		<ul class="footer" style="float: left;margin-top: -1.3%;">
+			<li><h3 style="color: rgb(255,103,0);">400-800-8820</h3></li>
+			<li>24小时客服热线(仅收市话费)</li>
+			<li><a href="#"><div class="lxkf" ><a href="#"><span class="glyphicon glyphicon-comment"></span>联系客服</a></div></a></li>
+		</ul>		
+	
+		
+	</div>
+	<div class="wwxk" style="width: 100%;height: 50%;background: rgb(230,230,230);clear: both;padding-left: 10%;padding-top: 3%;padding-bottom: 1%;">
+			<p id="wmall"  title="http://www.wmall.com" style="font-size: 30px;font-family: 华文琥珀;color: rgb(140,140,140);cursor: pointer;">WMALL</p>
+			<span title="隐私声明" class="spantop colorspan" style="margin-left: 10%;">隐私声明</span>
+			<span title="服务协议" class="spantop colorspan" style="margin-left: 14.5%;">服务协议</span>
+			<span class="spantop" style="margin-left: 19%;">Copyright © 2012-2018 微商软件技术有限公司</span>
+			<span class="spantop" style="margin-left: 41.5%;">版权所有</span>
+			<span class="spantop" style="margin-left: 46%;">保留一切权利</span>
+			<span class="spanbottom" style="margin-left: 10%;">公安备案</span>
+			<span class="spanbottom colorspan" style="margin-left: 14.5%;">苏公网安备32011402010009号</span>
+			<span class="spanbottom colorspan" style="margin-left:29.6%;"> 苏ICP备17040376号-6</span>
+			<span class="spanbottom" style="margin-left: 41%;">增值电信业务经营许可证：苏B2-20130048号</span>
+			<img title="TRUSTe隐私认证" style="float: right;margin-top: -3%;margin-right: 28%;" src="img/ww1.jpg" />
+			<img title="电子营业执照" style="float: right;margin-top: -3%;margin-right: 22.5%;" src="img/ww2.png" />
+			<img title="可信网站" style="float: right;margin-top: -3%;margin-right: 17%;" src="img/ww3.png" />
+			<img title="网络文化经营许可证" style="float: right;margin-top: -3%;margin-right: 11.5%;" src="img/ww4.png" />
+		
+	</div> 
+
+
+		
+
+ <script>
+	 
+	 $('.nav .wzdh').hover(function(){
+		$($(".wzdh a")[0]).html("网站导航⬆");		
+	 },function(){
+		 $($(".wzdh a")[0]).html("网站导航⬇");
+	 })
+	 
+	 $('.users').click(function(){
+		 window.location.href="index.html"
+	 })
+	 $('.business').click(function(){
+	 	window.location.href="service.html"
+	 })
+	  
+	 
+	 $('.nav ul li').hover(function(){
+		 $(this).children('ul').slideDown(200)
+		 
+	 },function(){
+		 $(this).children('ul').stop(true,true).slideUp()
+	 })
+	 $('.nav ul li ul li').hover(function(){
+		 $(this).css("background","white")
+	 },function(){
+		 $(this).css("background","rgb(245,245,245)")
+	 })
+	 
+  
+ </script>
+	</body>
+</html>

@@ -1,0 +1,1867 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>微商城</title>
+		<style type="text/css">
+			* {
+	         
+	          font-family: "微软雅黑";
+             }
+			.demo{
+				width: 200px;
+				height:200px;
+				background: green;
+			}
+			.demo1{
+				width: 80%;
+				height:30%;
+				margin-left: 10%;
+				background: whitesmoke;
+				margin-top: 4%;;
+			}
+			.demo2{
+				width: 80%;
+				height:30%;
+				margin-left: 10%;
+				background: whitesmoke;
+				margin-top: 1%;
+				padding-top: 2%;
+			}
+			.demo3{
+				width: 100%;
+				height:auto;
+				margin-top: 1%;
+				padding-top: 2%;
+			}
+			.topdemo:hover{
+				border:1px solid red;
+				opacity: 0.8;
+			}
+			.topdemo{
+				cursor: pointer;
+				background: white;
+			}
+			.bottomdemo{
+				margin-top: 1%;
+				background: white;
+				cursor: pointer;
+			}
+			.topdemo1:hover{
+				transform: scale(1.1);
+			}
+			.topdemo1{
+				background: white;
+			}
+			.topdemo1 {
+				cursor: pointer;
+				transition: all 0.6s;
+				
+			}
+			.bottomdemo1{
+				margin-top: 1%;
+				background: white;
+				cursor: pointer;
+			}
+			.bottomdemo1{
+				  cursor: pointer;
+                 transition: all 0.6s;
+
+			}
+			.bottomdemo1:hover{
+				  transform: scale(1.1);
+				
+			}
+			.topdemo2:hover{
+				border:1px solid red;
+				opacity: 0.8;
+			}
+			.topdemo2{
+				cursor: pointer;
+				padding: 5px;
+				background: white;
+			}
+			.bottomdemo2{
+				margin-top: 1%;
+				padding: 5px;
+				background: white;
+				cursor: pointer;
+			}
+			.bottomdemo2:hover{
+				border:1px solid red;
+				opacity: 0.8;
+			}
+			.hwtopdemo{
+				cursor: pointer;
+				background: white;
+				margin-bottom: 2%;
+			}
+			.hwbottomdemo
+			{
+				cursor: pointer;
+				background: white;
+			}
+			.bottomdemo:hover{
+				border:1px solid red;
+				opacity: 0.8;
+			}
+			
+			.rightdemo p{
+				text-align: center;
+				
+			}
+			.leftdemo:hover{
+				opacity: 0.8;
+			}
+			.hwrightdemo p{
+				text-align: center;	
+			}
+			
+			.redp{
+				color:red;
+				font-size: 15px;
+			}
+			.rightdemo1 img:hover{
+				border:1px solid  red;
+				cursor: pointer;
+			}
+			.leftdemo1 img:hover{
+				border:1px solid  red;
+				cursor: pointer;
+			}
+		
+			.xmdemo:hover{
+				
+				color: orangered;
+			}
+			.xmdemo{
+				cursor: pointer;
+				background: white;
+			}
+			
+			.service{
+				border:4px solid rgb(254,46,95);
+				margin-bottom: 2%;
+				cursor: pointer;
+			}
+			 .footer{
+			   margin-left: 7%;
+			   float: left;
+			   
+			}
+			 ul li{
+                 list-style-type:none;
+			}
+			ul li a{
+				text-decoration: none;
+				color: grey;
+			}
+			ul li a:hover{
+				text-decoration: none;
+				color:red;
+			}
+			.test{
+				border: 1px solid rgb(245,245,245);
+				overflow: hidden;
+				text-align: center;
+				padding-top: 0.3%;
+				cursor:pointer;
+			}
+			.test a{
+				
+				font-size: 13px;
+				color:gray;
+				
+			}
+			.test a:hover{
+				text-decoration: none;
+				color:orangered;
+			}
+			.test1{
+				border: 1px solid rgb(245,245,245);
+				overflow: hidden;
+				text-align: center;
+				/*padding-top: 0.3%;*/
+				margin: 0;
+				padding-bottom: 0.3%;
+				cursor:pointer;
+			}
+			.test1 a{
+				font-size: 13px;
+				color:white;
+				
+			}
+			.test1 a:hover{
+				text-decoration: none;
+				color: white;
+			}
+			
+		    .lxkf{
+		    	width:150px;
+		    	height: 40px;
+		    	border: 1px solid rgb(255,103,0);
+		    	text-align: center;
+		    	padding-top: 5%;
+		    	color:rgb(255,103,0);
+		    	
+		    }
+		    .lxkf a{
+		    	color:rgb(255,103,0);
+		    }
+		    .lxkf:hover{
+		    	background: rgb(242,88,7);
+		    	color:white;
+		    	
+		    	
+		    }
+		    .lxkf a:hover{
+		    	color:white;
+		    	
+		    }
+		    .findsame{
+		    	position: absolute;
+		    	margin-top: -4.4%;
+		    	background: black;
+		    	height: 9%;
+		    	width:15.3%;
+		    	clear: both;
+		    	margin-left: -0.35%;
+		    	color:white;
+		    	background: rgb(255,80,0);
+		    	display: none;
+		    }
+		   #menu li{
+		   	font-size: 14px;
+		   }
+		   #menu li a{
+		   	
+		   	transition:all 1.5s;
+		   	
+		   }
+		   #menu li a:hover{
+		   	background: orangered;
+		   	transform: scale(1.1);
+		   }
+		   .nav{
+		   	background: rgb(245,245,245);
+		   	padding-top: 0.5%;
+		   	padding-bottom: 0.5%;
+		   }
+		   .nav a{
+		   	font-size: 13px;
+		   	text-decoration: none;
+		   	color:rgb(108,108,108);
+		   }
+		   .nav a:hover{
+		   	color:rgb(255,68,0);
+		   	text-decoration: none;
+		   }
+		   .search{
+		   	width: 80%;
+		   	margin-left: 10%;
+		   	margin-top: 1%;
+		   	margin-bottom: 1%;
+		   }
+		   .search a{
+		   	color: rgb(51,51,51);
+		   	font-size: 15px;
+		   	margin-left: 3%;
+		   	margin-top: 2%;
+		   }
+		   .search a:hover{
+		   	 text-decoration: none;
+		   	 cursor: pointer;
+		   	 color:rgb(255,68,0);
+		   }
+		   .hidemenu{
+		   	border-top: 1px solid rgba(225,68,0,0.5);
+		   	height: 30%;
+		   	padding-top: 1%;
+		   	margin-bottom: 1%;
+		   }
+		   .search1{
+		   	width: 80%;
+		   	margin-left: 10%;
+		   	position:absolute;
+		   	background:white;
+		   	top: 11%;
+		   }
+		   .item img:hover{
+		   	cursor: pointer;
+		   } 
+		   .hidediv{
+		   	height: 10%;
+
+		   }
+		   .spantop{
+		    float: left;
+		    color:rgb(164,164,164);
+		    margin-top: -4%;
+		   }
+		   .colorspan{
+		   	 cursor: pointer;
+		   }
+		   .colorspan:hover{
+		   	color: rgb(255,0,0);
+		   }
+		   .spanbottom{
+		   	float: left;
+		   	color:rgb(164,164,164);
+		   	margin-top: -2.5%;
+		   	
+		   }
+		   .wwxk img:hover{
+		   	cursor: pointer;
+		   }
+		   
+			 
+			 .nav ul li {
+			 	list-style: none;
+			 	float: left;
+			 	width: 80px;
+			 	margin-left: 1.5%;
+			 
+			 }
+			 
+			ul li ul{
+				position: absolute;
+				z-index: 20;
+				left: 31%;
+				margin-top:0.1%;
+				width: 800px;
+				height: 80px;
+				display: none;
+			}
+			.nav ul li ul li{
+				display: block;
+				width: 200px;
+				height:40px;
+				padding-top:1.5%;
+				border: 1px solid rgb(238,238,238);
+				background: whitesmoke;
+				text-align: center;
+				margin-left: 0.5%;
+			}
+			 ul li ul li:hover{
+			 	cursor: pointer;
+			 	
+			 }
+			 .nav a:hover{
+			 color:rgb(255,68,0);
+			 text-decoration: none;
+			 }
+		  
+		  #myspan:hover{
+				background:rgb(255,68,0);
+				color:white;
+				border:1px solid rgb(255,68,0);
+			}
+		</style>
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+	</head>
+<body>
+	<!--<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid" >
+    <div class="navbar-header"> 
+    </div>
+    <div class="search" style="margin-left: 300px;">
+        <ul id="menu" class="nav navbar-nav">
+            <li><a href="#jrth">今日特惠</a></li>
+            <li><a href="#qdsx">秋冬上新</a></li>
+            <li><a href="#gjpp">国际品牌</a></li>
+            <li class="dropdown">
+                <a href="#xmzq" class="dropdown-toggle" data-toggle="dropdown">
+                     小米专区
+                    <b class="caret"></b>
+                </a>
+                <ul  class="dropdown-menu">
+                    <li class="droplist"><a href="#">小米手机</a></li>
+                    <li class="droplist"><a href="#">红米</a></li>
+                    <li class="droplist"><a href="#">电视</a></li>               
+                    <li class="droplist"><a href="#">笔记本</a></li>                 
+                    <li class="droplist"><a href="#">空调</a></li>
+                </ul>
+            </li>
+           
+            <li class="dropdown">
+                <a href="#hwzq" class="dropdown-toggle" data-toggle="dropdown">
+                    华为专区
+                    <b class="caret"></b>
+                </a>
+                <ul  class="dropdown-menu">
+                    <li class="droplist"><a href="#">荣耀</a></li>
+                    <li class="droplist"><a href="#">华为P系列</a></li>
+                    <li class="droplist"><a href="#">华为Mate系列</a></li>            
+                    <li class="droplist"><a href="#">华为Nova系列</a></li>
+                    <li class="droplist"><a href="#">华为麦芒系列</a></li>
+                </ul>
+            </li>
+            <li ><a href="#">服务</a></li>
+            <li ><a href="#">社区</a></li>
+            <!--<li>
+            	<a><input style="margin-top: -5px;"  type="text" size="35" placeholder="小米Air 华为荣耀10" >
+            	<div style="position: absolute;margin-top: -22px;margin-left: 240px;cursor: pointer;">
+            	 <span class="glyphicon glyphicon-search"></span>
+            	</div>	
+            	</a>
+            </li>
+            
+        </ul>
+    </div>
+    </div>
+</nav>-->
+
+		<div class="nav">
+			<ul>
+				<li><a href="index.html" style="margin-left: 10%;">首页</a></li>
+				<li><a href="#" style="margin-left: 1%;">商品分类</a></li>
+				<li><a href="#" style="margin-left: 1%;">商家支持</a></li>
+				<li><a href="#" style="margin-left: 1%;">粉丝俱乐部</a></li>
+				<li><a href="service.html" target="_blank" style="margin-left: 1%;">帮助中心</a></li>
+				<li  class="wzdh">
+					<a id="wzdh" href="#" style="margin-left: 0%;">网站导航⬇</a>
+					<ul>
+						 <a href="http://www.baidu.com"><li>百度</li></a>
+						 <a href="http://www.qq.com"><li>腾讯网</li></a>
+						 <a href="http://www.tmall.com"><li>天猫</li></a>
+						 <a href="http://www.taobao.com"><li>淘宝</li></a>
+						 <a href="http://www.jd.com"><li>京东</li></a>
+						 <a href="http://www.xiaomi.com"><li>小米</li></a>
+						 <a href="http://www.vmall.com"><li>华为</li></a>
+						 <a href="http://www.gome.com.cn"><li>国美</li></a>
+						 <a href="http://www.sina.com"><li>新浪</li></a>
+						 <a href="http://www.douyu.com"><li>斗鱼</li></a>
+						 <a href="http://www.huya.com"><li>虎牙</li></a>
+						 <a href="http://www.bilibili.com"><li>哔哩哔哩</li></a>
+					</ul>
+					</li>
+				<li><a href="#" style="margin-left: 1%;">更多精彩</a></li>
+				<li><a href="#" style="margin-left: 1%;">手机版</a></li>
+				<li><a id="dl" href="#" style="margin-left: 31%;">登录</a></li>
+				<li><a id="tc" href="#" style="margin-left: 1%;display: none;">退出</a></li>
+				<li><a id="zc" href="register.html" target="_blank" style="margin-left: 1%;">注册</a></li>
+				<li><a href="#" style="margin-left: 1%;">我的订单</a></li>
+				<li><a id="topgwc" href="#" style="margin-left: 1%;"><span class="glyphicon glyphicon-shopping-cart"></span>购物车</a></li>	
+			</ul>
+		
+		
+		</div>
+
+
+<!-- <div class="nav">
+	
+	<a href="#" style="margin-left: 10%;">首页</a>
+	<a href="#" style="margin-left: 1%;">商品分类</a>
+	<a href="#" style="margin-left: 1%;">商家支持</a>
+	<a href="#" style="margin-left: 1%;">粉丝俱乐部</a>
+	<a href="#" style="margin-left: 1%;">帮助中心</a>
+	<a href="#" style="margin-left: 1%;">网站导航</a>
+	<a href="#" style="margin-left: 1%;">更多精彩</a>
+	<a href="#" style="margin-left: 1%;">手机版</a>
+	<a id="dl" href="#" style="margin-left: 31%;">登录</a>
+	<a id="tc" href="#" style="margin-left: 1%;display: none;">退出</a>
+	<a id="zc" href="register.html" target="_blank" style="margin-left: 1%;">注册</a>
+	<a href="#" style="margin-left: 1%;">我的订单</a>
+	<a id="topgwc" href="#" style="margin-left: 1%;"><span class="glyphicon glyphicon-shopping-cart"></span>购物车</a>
+</div> -->
+<div class="search">	
+	<a id="xmsj">小米手机</a>
+	<a id="ds">电视</a>
+	<a id="kt">空调</a>
+	<a id="bjb">笔记本</a>
+	<a id="hwsj">华为手机</a>
+	<a id="znjj">智能家居</a>
+	<a href="service.html" target="_blank">服务</a>
+	<a>社区</a>
+    <input style="width:300px;height: 40px;margin-left: 16.1%;padding-left:2%;"  type="text" placeholder="小米Air  华为荣耀10" size="40"/>
+    <span id="myspan" style="position: absolute;left: 86.7%;top: 6.3%;border:1px solid rgb(153,153,153);cursor: pointer;padding:0.75% 1% 0.8% 1%" class="glyphicon glyphicon-search"></span>
+    
+</div>
+<div class="search1">
+	<div class=" hidemenu" id="xmsj">
+		<img src="img/xm25.png" style="width: 15%;border-right: 1px solid rgb(224,224,224);" /><!--<span style="color: gray;font-size: 200%;">|</span>-->
+	    <img src="img/xm26.png" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/xm27.png" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/xm28.png" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/xm29.png" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/xm30.png" style="width: 15%;" /></br>
+	    <span style="margin-left: 5%;text-align: center;">小米手机8</span>
+	    <span style="margin-left: 8%;text-align: center;">小米8屏幕指纹版</span>
+	    <span style="margin-left: 9%;text-align: center;">小米8</span>
+	    <span style="margin-left: 10%;text-align: center;">小米手机8 SE</span>
+	    <span style="margin-left: 9%;text-align: center;">小米MAX 3</span>
+	    <span style="margin-left: 9%;text-align: center;">小米MIX 2S</span><br />
+	    <span style="margin-left: 5%;color: rgb(225,68,0);text-align: center;">1399元起</span>
+	    <span style="margin-left: 10%;color: rgb(225,68,0);text-align: center;">3199元起</span>
+	    <span style="margin-left: 10%;color: rgb(225,68,0);text-align: center;">2699元起</span>
+	    <span style="margin-left: 10%;color: rgb(225,68,0);text-align: center;">1799元起</span>
+	    <span style="margin-left: 10%;color: rgb(225,68,0);text-align: center;">1699元起</span>
+	    <span style="margin-left: 10%;color: rgb(225,68,0);text-align: center;">3299元起</span>
+	</div>
+	
+</div>
+<div class="search1">
+	<div class=" hidemenu" id="ds">
+		<img src="img/xm31.png" style="width: 15%;border-right: 1px solid rgb(224,224,224);" />
+	    <img src="img/xm32.png" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/xm33.png" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/xm34.png" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/xm35.png" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/xm36.png" style="width: 15%;" /></br>
+	    <span style="margin-left: 3%;text-align: center;">小米电视4 75英寸</span>
+	    <span style="margin-left: 5%;text-align: center;">小米电视4A 32英寸</span>
+	    <span style="margin-left: 4%;text-align: center;">小米电视4A 43英寸青春版</span>
+	    <span style="margin-left: 3%;text-align: center;">小米电视4A 50英寸</span>
+	    <span style="margin-left: 5%;text-align: center;">小米电视4A 50英寸</span>
+	    <span style="margin-left: 6%;text-align: center;">查看全部</span><br />
+	    <span style="margin-left: 5%;color: rgb(225,68,0);text-align: center;">8999元起</span>
+	    <span style="margin-left: 10%;color: rgb(225,68,0);text-align: center;">899元起</span>
+	    <span style="margin-left: 10%;color: rgb(225,68,0);text-align: center;">1499元起</span>
+	    <span style="margin-left: 10%;color: rgb(225,68,0);text-align: center;">1999元起</span>
+	    <span style="margin-left: 10%;color: rgb(225,68,0);text-align: center;">2499元起</span>
+	    <span style="margin-left: 10%;text-align: center;">小米电视</span>
+	</div>
+	
+</div>
+<div class="search1">
+	<div class=" hidemenu" id="kt">
+		<img src="img/kt.jpg" style="width: 15%;border-right: 1px solid rgb(224,224,224);" /><!--<span style="color: gray;font-size: 200%;">|</span>-->
+	    <img src="img/kt2.jpg" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/kt1.jpg" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/kt4.jpg" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/kt5.jpg" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    </br>
+	    <span style="margin-left: 3%;text-align: center;">米家互联网空调</span>
+	    <span style="margin-left: 6%;text-align: center;">奥克斯黄金侠空调</span>
+	    <span style="margin-left: 7%;text-align: center;">美的 KFR-GW</span>
+	    <span style="margin-left: 8%;text-align: center;">格力KFR-GW</span>
+	    <span style="margin-left: 8%;text-align: center;">奥克斯KFR-GW</span> <br />
+	
+	    <span style="margin-left: 5%;color: rgb(225,68,0);text-align: center;">1999元</span>
+	    <span style="margin-left: 11%;color: rgb(225,68,0);text-align: center;">2499元</span>
+	    <span style="margin-left: 11%;color: rgb(225,68,0);text-align: center;">2099元</span>
+	    <span style="margin-left: 12%;color: rgb(225,68,0);text-align: center;">2799元</span>
+	    <span style="margin-left: 11%;color: rgb(225,68,0);text-align: center;">2099元</span>
+	   
+	</div>
+	
+</div>
+
+<div class="search1">
+	<div class=" hidemenu" id="bjb">
+		<img src="img/bjb1.png" style="width: 15%;border-right: 1px solid rgb(224,224,224);" />
+	    <img src="img/bjb2.png" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/bjb3.png" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/hw11.jpg" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/hw12.jpg" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/hw13.jpg" style="width: 15%;" /></br>
+	    <span style="margin-left: 3%;text-align: center;">小米游戏本8代</span>
+	    <span style="margin-left: 6%;text-align: center;">小米笔记本Pro GTX版</span>
+	    <span style="margin-left: 5%;text-align: center;">小米笔记本Pro</span>
+	    <span style="margin-left: 6%;text-align: center;">华为MateBook X Pro</span>
+	    <span style="margin-left: 4%;text-align: center;">华为MagicBook星云紫</span>
+	    <span style="margin-left: 4%;text-align: center;">华为MateBook D</span><br />
+	    <span style="margin-left: 4%;color: rgb(225,68,0);text-align: center;">6699元起</span>
+	    <span style="margin-left: 10%;color: rgb(225,68,0);text-align: center;">6299元起</span>
+	    <span style="margin-left: 10%;color: rgb(225,68,0);text-align: center;">5599元起</span>
+	    <span style="margin-left: 10%;color: rgb(225,68,0);text-align: center;">7899元起</span>
+	    <span style="margin-left: 10%;color: rgb(225,68,0);text-align: center;">3999元起</span>
+	    <span style="margin-left: 11%;color: rgb(225,68,0);text-align: center;">5188元</span>
+	</div>
+	
+</div>
+
+<div class="search1">
+	<div class=" hidemenu" id="hwsj">
+		<img src="img/hw2.jpg" style="width: 15%;border-right: 1px solid rgb(224,224,224);" />
+	    <img src="img/hw14.jpg" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/hw3.jpg" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/hw5.jpg" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/hwnova.jpg" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/hw6.jpg" style="width: 15%;" /></br>
+	    <span style="margin-left: 6%;text-align: center;">荣耀10</span>
+	    <span style="margin-left: 11%;text-align: center;">荣耀V10</span>
+	    <span style="margin-left: 10%;text-align: center;">荣耀8X MAX</span>
+	    <span style="margin-left: 8%;text-align: center;">荣耀Play</span>
+	    <span style="margin-left: 9%;text-align: center;">华为Nova 3</span>
+	    <span style="margin-left: 7%;text-align: center;">华为Mate RS 保时捷</span><br />
+	    <span style="margin-left: 6%;color: rgb(225,68,0);text-align: center;">2299元</span>
+	    <span style="margin-left: 11%;color: rgb(225,68,0);text-align: center;">2099元</span>
+	    <span style="margin-left: 11%;color: rgb(225,68,0);text-align: center;">1499元</span>
+	    <span style="margin-left: 11%;color: rgb(225,68,0);text-align: center;">1799元</span>
+	    <span style="margin-left: 10%;color: rgb(225,68,0);text-align: center;">2799元</span>
+	    <span style="margin-left: 11%;color: rgb(225,68,0);text-align: center;">9999元</span>
+	</div>
+	
+</div>
+<div class="search1">
+	<div class=" hidemenu" id="znjj">
+		<img src="img/wrj.jpg" style="width: 15%;border-right: 1px solid rgb(224,224,224);" />
+	    <img src="img/jqr.jpg" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/lyq.png" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/xfj.png" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/jhq.jpg" style="width: 15%;border-right: 1px solid rgb(224,224,224);"" />
+	    <img src="img/sxt.jpg" style="width: 15%;" /></br>
+	    <span style="margin-left: 5%;text-align: center;">小米无人机</span>
+	    <span style="margin-left: 8%;text-align: center;">米家扫地机器人</span>
+	    <span style="margin-left: 8%;text-align: center;">小米路由器4</span>
+	    <span style="margin-left: 7%;text-align: center;">空气堡智慧新风机</span>
+	    <span style="margin-left: 3%;text-align: center;">根元舌尖卫士冰箱净化器</span>
+	    <span style="margin-left: 3%;text-align: center;">海雀智能摄像头H1 白色</span><br />
+	    <span style="margin-left: 6%;color: rgb(225,68,0);text-align: center;">2999元</span>
+	    <span style="margin-left: 11%;color: rgb(225,68,0);text-align: center;">1699元</span>
+	    <span style="margin-left: 11%;color: rgb(225,68,0);text-align: center;">199元</span>
+	    <span style="margin-left: 12%;color: rgb(225,68,0);text-align: center;">9398元</span>
+	    <span style="margin-left: 10%;color: rgb(225,68,0);text-align: center;">158元</span>
+	    <span style="margin-left: 12%;color: rgb(225,68,0);text-align: center;">259元</span>
+	</div>
+	
+</div>
+   
+<div id="container">	
+       
+    	<div id="lb" style="width: 100%;height: 20%;">
+    		   <div id="myCarousel" class="carousel slide" style="width: 80%;height: 20%;margin-left: 10%;">
+    <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>   
+    <!-- 轮播（Carousel）项目 -->
+       <div class="carousel-inner">
+        <div class="item active" >
+            <img style="width: 100%;height: 50%;" src="img/1.jpg" alt="First slide" >
+            <div class="carousel-caption"></div>
+        </div>
+        <div class="item">
+            <img style="width: 100%;height: 20%;" src="img/xm11.jpg" alt="Second slide" >
+            <div class="carousel-caption"></div>
+        </div>
+        <div class="item">
+            <img style="width: 100%;height: 20%;" src="img/lb1.jpg" alt="Third slide" >
+            <div class="carousel-caption"></div>
+        </div>
+        <div class="item">
+            <img style="width: 100%;height: 20%;" src="img/hwlb.png" alt="Four slide" >
+            <div class="carousel-caption"></div>
+        </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+   
+</div>
+<h3 id="jrth" style="text-align: center;padding-top: 2.5%;padding-bottom: 1%;"> ——今日特惠—— </h3>
+<div class="topTitle" style="float: right;margin-top: 15px;margin-right: 170px;font-style:">
+		<a style="color: black;" href="#">进口食品</a>&nbsp;&nbsp;&nbsp;
+		<a style="color: black;" href="#">食品饮料</a>&nbsp;&nbsp;&nbsp;
+		<a style="color: black;" href="#">粮油副食</a>&nbsp;&nbsp;&nbsp;
+		<a style="color: black;" href="#">母婴用品</a>&nbsp;&nbsp;&nbsp;
+		<a style="color: black;" href="#">美容洗护</a>&nbsp;&nbsp;&nbsp;
+		<a style="color: black;" href="#">生鲜水果</a>
+</div>
+<div class="demo1">
+	<div class="title" style="position: absolute;background: rgba(0,0,0,0.55);color: whitesmoke;width: 15%;z-index: 2;top: 150%;cursor: pointer;">
+		<p style="font-size: 21px;text-align: center;">分享好物</p>
+		<p style="font-size: 21px;text-align: center;">买2免1</p>
+	</div>
+
+	<div style="width:20%;float:left;cursor: pointer;">
+		<div class="leftdemo" style="width:102.5%">	
+	  
+	      <img src="img/tm1.jpg" width="100%" height="50%" />
+	
+	    </div>
+		
+	</div>
+
+	<div class="rightdemo" style="width: 80%;height:50%;background:whitesmoke;float: left;">
+		
+	    <div class="topdemo" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<a href="product.html" style="text-decoration: none;color: black;" target="_blank">
+	    	<img src="img/tm3.jpg" width="100%;"height="100%">
+	    	<p>斑布本色餐巾抽纸</p>
+	    	<p>实惠装整箱家庭装</p>
+	    	<p class="redp">￥59.0</p>
+	    	</a>
+	    </div>
+	    
+	    <div class="topdemo" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm2.jpg" width="100%;"height="100%">
+	    	<p>膜法世家面膜贴30片</p>
+	    	<p> 玻尿酸补水保湿亮肤锁水</p>
+	    	<p class="redp">￥ 89.90</p>
+	    </div>
+	   
+	   
+	    <div class="topdemo" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm4.jpg" width="100%;"height="100%">
+	    	<p>【酒厂自营】古井贡酒</p>
+	    	<p>哈萨克斯坦世博会</p>
+	    	<p class="redp">¥ 498.00</p>
+	    </div>
+	   
+	    
+	   <div class="topdemo" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm5.jpg" width="100%;"height="100%">
+	    	<p>超能天然皂粉洗衣粉</p>
+	    	<p>微囊创香+MES活性</p>
+	    	<p class="redp">¥ 49.90</p>
+	    </div>
+	  
+	  
+	    <div class="bottomdemo" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm6.jpg" width="100%;"height="100%">
+	    	<p>雅培全安素</p>
+	    	<p>900g蛋白质膳食</p>
+	    	<p class="redp">¥ 195.00</p>
+	    </div>
+	   
+	   
+	    <div class="bottomdemo" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm7.png" width="100%;"height="100%">
+	    	<p>诺瑞好之味成犬粮</p>
+	    	<p>牛肉味狗粮2.5kg小型犬</p>
+	    	<p class="redp">¥ 29.00</p>
+	    </div>
+	    
+	    
+	    <div class="bottomdemo" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm8.jpg" width="100%;"height="100%">
+	    	<p>高钙低脂奶</p>
+	    	<p>250ml*24盒</p>
+	    	<p class="redp">¥63.90</p>
+	    </div>
+	   
+	   
+	   <div class="bottomdemo" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm9.jpg" width="100%;"height="100%">
+	    	<p>韩后花痴护肤品套装</p>
+	    	<p>女补水保湿水乳液美白</p>
+	    	<p class="redp">¥ 156.00</p>
+	    </div>
+	   
+	</div>	
+</div>
+<br />
+
+<h3 id="qdsx" style="text-align: center;padding-top: 2%;clear: both;"> ——秋冬上新—— </h3>
+    <div class="demo1">	
+    	<div class="title" style="position: absolute;background: rgba(0,0,0,0.55);color: whitesmoke;width: 15%;z-index: 2;top: 245%;cursor: pointer;">
+		<p style="font-size: 21px;text-align: center;">抢卷满减</p>
+		<p style="font-size: 21px;text-align: center;">超值优惠</p>
+	</div>
+      <div style="width:20%;float:left;cursor: pointer;">
+		<div class="leftdemo" style="width:102.5%">	
+	  
+	      <img src="img/tm34.png" width="100%" height="50%" />
+	
+	    </div>
+		
+	</div>
+
+	<div class="rightdemo" style="width: 80%;height:50%;background:whitesmoke;float: left;">
+		
+	    <div class="topdemo2" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<a href="product1.html" style="text-decoration: none;color: black;" target="_blank">
+	    	<img src="img/tm28.jpg" width="100%;"height="100%">
+	    	<p>夏季韩版学生宽松学院风</p>
+	    	<p>高腰连体吊带</p>
+	    	<p class="redp">￥179.00</p>
+	    	<div class="findsame">
+	    		<p>💗找相似</p>
+	    		
+	    		<p>发现更多相似的宝贝</p>
+	    		
+	    	</div>
+	    	</a>
+	    </div>
+	    
+	    <div class="topdemo2" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm24.jpg" width="100%;"height="100%">
+	    	<p>拉夏贝尔网纱碎花</p>
+	    	<p>黑色一字肩假两件</p>
+	    	<p class="redp">￥ 499.90</p>
+	    	<div class="findsame">
+	    		<p>💗找相似</p>
+	    		
+	    		<p>发现更多相似的宝贝</p>
+	    		
+	    	</div>
+	    </div>
+	   
+	   
+	    <div class="topdemo2" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm25.jpg" width="100%;"height="100%">
+	    	<p>韩都衣舍韩版</p>
+	    	<p>印花时尚两件套</p>
+	    	<p class="redp">¥273.00</p>
+	    	<div class="findsame">
+	    		<p>💗找相似</p>
+	    		
+	    		<p>发现更多相似的宝贝</p>
+	    		
+	    	</div>
+	    </div>
+	   
+	    
+	   <div class="topdemo2" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm26.jpg" width="100%;"height="100%">
+	    	<p>2017新款女装</p>
+	    	<p>唯品会秋装时尚风衣</p>
+	    	<p class="redp">¥ 239.00</p>
+	    	<div class="findsame">
+	    		<p>💗找相似</p>
+	    		
+	    		<p>发现更多相似的宝贝</p>
+	    		
+	    	</div>
+	    </div>
+	  
+	  
+	    <div class="bottomdemo2" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm29.jpg" width="100%;"height="100%">
+	    	<p>花花公子春秋薄款</p>
+	    	<p>弹力修身抽绳长裤</p>
+	    	<p class="redp">¥ 195.00</p>
+	    	<div class="findsame">
+	    		<p>💗找相似</p>
+	    		
+	    		<p>发现更多相似的宝贝</p>
+	    		
+	    	</div>
+	    </div>
+	   
+	   
+	    <div class="bottomdemo2" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm30.jpg" width="100%;"height="100%">
+	    	<p>七匹狼男士时尚潮流</p>
+	    	<p>休闲印花圆领T恤</p>
+	    	<p class="redp">¥ 169.00</p>
+	    	<div class="findsame">
+	    		<p>💗找相似</p>
+	    		
+	    		<p>发现更多相似的宝贝</p>
+	    		
+	    	</div>
+	    </div>
+	    
+	    
+	    <div class="bottomdemo2" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm31.jpg" width="100%;"height="100%">
+	    	<p>海澜之家简约休闲秋季</p>
+	    	<p>舒适四面弹上衣男</p>
+	    	<p class="redp">¥258.00</p>
+	    	<div class="findsame">
+	    		<p>💗找相似</p>
+	    		
+	    		<p>发现更多相似的宝贝</p>
+	    		
+	    	</div>
+	    </div>
+	   
+	   
+	   <div class="bottomdemo2" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm32.jpg" width="100%;"height="100%">
+	    	<p>森马卫衣男</p>
+	    	<p>2018秋季新款</p>
+	    	<p class="redp">¥ 199.00</p>
+	    	<div class="findsame">
+	    		<p>💗找相似</p>
+	    		
+	    		<p>发现更多相似的宝贝</p>
+	    		
+	    	</div>
+	    </div>
+	   
+	</div>	
+      
+    </div>
+ </div>   
+
+  
+  <div class="demo1">
+  	<h3 id="gjpp" style="text-align: center;padding-top: 4.5%;padding-bottom: 2%;clear: both;"> ——国际品牌—— </h3>
+
+	<div style="width:20%;float:left;cursor: pointer;">
+		<div class="title" style="position: absolute;background: rgba(0,0,0,0.55);color: whitesmoke;width: 15%;z-index: 2;top: 340%;cursor: pointer;">
+		<p style="font-size: 21px;text-align: center;">大牌好货</p>
+		<p style="font-size: 21px;text-align: center;">轻松购入</p>
+	</div>
+		<div class="leftdemo" style="width:102.5%">	
+	  
+	      <img src="img/tm15.jpg" width="100%" height="50%" />
+	
+	    </div>
+		
+	</div>
+
+	<div class="rightdemo" style="width: 80%;height:50%;background:whitesmoke;float: left;">
+		
+	    <div class="topdemo1" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<a href="product2.html" style="text-decoration: none;color: black;" target="_blank">
+	    	<img src="img/tm16.jpg" width="100%;"height="100%">
+	    	<p>Dior迪奥 烈焰蓝金唇膏</p>
+	    	<p>CD口红 傲姿唇膏 3.5g</p>
+	    	<p class="redp">¥ 300.00</p>
+	    	</a>
+	    </div>
+	    
+	    <div class="topdemo1" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm17.jpg" width="100%;"height="100%">
+	    	<p>Saint LaurentYSL圣罗兰18ss</p>
+	    	<p> 新款褶皱复古单肩包斜挎女包</p>
+	    	<p class="redp">¥ 32855.00</p>
+	    </div>
+	   
+	   
+	    <div class="topdemo1" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm18.jpg" width="100%;"height="100%">
+	    	<p>瑞士手表天梭库图系列</p>
+	    	<p>自动机械皮带男表T035</p>
+	    	<p class="redp">¥ 4501.00 </p>
+	    </div>
+	   
+	    
+	   <div class="topdemo1" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm19.jpg" width="100%;"height="100%">
+	    	<p>【日本】晴之良品 EGF增殖因子</p>
+	    	<p>保湿修护紧致滋润精华液正品50ml</p>
+	    	<p class="redp">¥ 399.00 </p>
+	    </div>
+	  
+	  
+	    <div class="bottomdemo1" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm20.jpg" width="100%;"height="100%">
+	    	<p>Puma/彪马男T恤Arsenal</p>
+	    	<p>阿森纳短袖圆领透气美国直邮</p>
+	    	<p class="redp">¥ 799.00</p>
+	    </div>
+	   
+	   
+	    <div class="bottomdemo1" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm21.jpg" width="100%;"height="100%">
+	    	<p>Panasonic/松下家用吹风机</p>
+	    	<p> EH-NE42护发负离子</p>
+	    	<p class="redp">¥ 329.00 </p>
+	    </div>
+	    
+	    
+	    <div class="bottomdemo1" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm22.webp" width="100%;"height="100%">
+	    	<p>【直营】美国Beats进口 BeatsX</p>
+	    	<p>蓝牙无线入耳式运动耳机</p>
+	    	<p class="redp">¥ 799.00</p>
+	    </div>
+	   
+	   
+	   <div class="bottomdemo1" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/tm23.jpg" width="100%;"height="100%">
+	    	<p>Nike Air Jordan 1 </p>
+	    	<p>Bred Toe AJ1乔1 黑红脚趾</p>
+	    	<p class="redp">¥ 3725.38</p>
+	    </div>
+	   
+</div>
+</div>
+
+<br />
+
+  
+ <div class="demo1">
+    <h3 id="xmzq" style="text-align: center;padding-top: 4.5%;padding-bottom:2%;clear: both;"> ——小米专区—— </h3>
+    <a href="#"><img src="img/xm22.jpg" width="100%" style="margin-bottom: 15px;" /></a>
+
+	<div class="rightdemo" style="width: 100%;height:50%;background:whitesmoke;float: left;">
+		 <div class="xmdemo" style="width: 19%;height: 100%;float: left;margin-right: 1.25%;">
+	    	<img src="img/xm6.jpg" width="100%" height="100%">
+	    	
+	    	
+	    </div>
+	    <div class="xmdemo colors" style="width: 19%;height: 100%;float: left;margin-right: 1.25%;">
+	    	<a href="product3.html" style="text-decoration: none;color: black;" target="_blank">
+	    	<img src="img/xm1.jpg" width="100%;"height="100%">
+	    	<p class="colorp">小米电视4A 43英寸 青春版</p>
+	    	<p class="colorp"><small>全高清屏/人工智能语音</small></p>
+	    	<p class="redp">￥1999  </p>
+	    	<div class="hidediv" style="background:orangered;margin-top: -32%;">
+  		       <p style="color: white;font-size: 14px;">尺寸正好，画质清晰，非常满意 </p>
+  		      <p style="color: white"> --来自于<b>大亨</b>的评价</p>
+  	        </div>
+  	        </a>
+	    </div>
+	    
+	    
+	    
+	    <div class="xmdemo" style="width: 19%;height: 100%;float: left;margin-right: 1.25%;">
+	    	<img src="img/xm13.jpg" width="100%;"height="100%">
+	    	<p>小米笔记本Air 13.3"</p>
+	    	<p class="hidep"><small>四核 i7-8550U 2GB显存</small></p>
+	    	<p class="hidep redp">￥5999</p>
+	    	
+	    	<div class="hidediv" style="background:orangered;margin-top: -32%;">
+  		       <p style="color: white">我是我们村第一个上网买东西的人 </p>
+  		      <p style="color: white"> --来自于<b>CYL</b>的评价</p>
+  	        </div>
+  	     
+	    </div>
+	   
+	   
+	    <div class="xmdemo" style="width: 19%;height: 100%;float: left;margin-right: 1.25%;">
+	    	<img src="img/xm14.jpg" width="100%;"height="100%">
+	    	<p>小米MIX 2S 8GB+256GB</p>
+	    	<p class="hidep"><small>骁龙845 年度旗舰处理器</small></p>
+	    	<p class="hidep redp">￥3599</p>
+	    	
+	    	<div class="hidediv" style="background:orangered;margin-top: -32%;">
+  		       <p style="color: white">这个手机很好用，大爱啦啦啦 </p>
+  		      <p style="color: white"> --来自于<b>一个低调的米粉</b>的评价</p>
+  	        </div>
+  	     
+	    </div>  
+	    
+	   <div class="xmdemo" style="width: 19%;height: 100%;float:left;">
+	    	<img src="img/xm5.jpg" width="100%"height="100%">
+	    	<p>米家声波电动牙刷</p>
+	    	<p class="hidep"><small>磁悬浮声波马达 </small></p>
+	    	<p class="hidep redp">¥199</p>
+	    	<div class="hidediv" style="background: orangered;margin-top: -32%;">
+  		       <p style="color: white">和老婆一人一只，小米的忠粉 </p>
+  		      <p style="color: white">  --来自于<b>寒飞雪</b>的钟爱粉</p>
+  	        </div>
+	    </div>
+	  <br />
+	  
+	 
+	    <div class="xmdemo" style="width: 19%;height: 100%;float: left;margin-right: 1.25%;clear: both;margin-top: 3%;">
+	    	<img src="img/xm16.jpg" width="100%" height="100%">
+	    	
+	    	
+	    </div>
+	   
+	   
+	   <div class="xmdemo" style="width: 19%;height: 100%;float: left;margin-right: 1.25%;margin-top: 3%;">
+	    	<img src="img/xm3.png" width="100%;"height="100%">
+	    	<p>米家空气净化器Pro</p>
+	    	<p><small>OLED显示屏幕/激光颗粒物质传感器</small></p>
+	    	<p class="redp">￥1499  </p>
+	    	<div class="hidediv" style="background:orangered;margin-top: -32%;">
+  		       <p style="color: white;font-size: 14px;">外观很漂亮，好高大尚 </p>
+  		      <p style="color: white"> --来自于<b>嘉仁宫</b>的评价</p>
+  	        </div>
+	    </div>
+
+	    <div class="xmdemo" style="width: 19%;height: 100%;float: left;margin-right: 1.25%;margin-top: 3%;">
+	    	<img src="img/xm18.jpg" width="100%;"height="100%">
+	    	<p>米家电水壶</p>
+	    	<p><small>一杯水,是一家人的安心</small></p>
+	    	<p class="redp">￥99  </p>
+	    	<div class="hidediv" style="background:orangered;margin-top: -32%;">
+  		       <p style="color: white;font-size: 14px;">好看，颜值高 </p>
+  		      <p style="color: white"> --来自于<b>神龙</b>的评价</p>
+  	        </div>
+	    </div>
+	   
+	   
+	  <div class="xmdemo" style="width: 19%;height: 100%;float: left;margin-right: 1.25%;margin-top: 3%;">
+	    	<img src="img/xm4.png" width="100%;"height="100%">
+	    	<p>米家LED吸顶灯</p>
+	    	<p><small>用光线还原理想生活</small></p>
+	    	<p class="redp">￥399  </p>
+	    	<div class="hidediv" style="background:orangered;margin-top: -32%;">
+  		       <p style="color: white;font-size: 14px;">和描述的一样，米家的产品就是好 </p>
+  		      <p style="color: white"> --来自于<b>Pings</b>的评价</p>
+  	        </div>
+	    </div>
+	    <div class="xmdemo" style="width: 19%;height: 100%;float: left;margin-top: 3%;">
+	    	<img src="img/xm21.jpg" width="100%;"height="100%">
+	    	<p>小米体重秤</p>
+	    	<p><small>高精度压力传感器</small></p>
+	    	<p class="redp">￥99  </p>
+	    	<div class="hidediv" style="background:orangered;margin-top: -32%;">
+  		       <p style="color: white;font-size: 14px;">真好，我500kg都能用 </p>
+  		      <p style="color: white"> --来自于<b>皮皮胖</b>的评价</p>
+  	        </div>
+	    	
+        </div> 
+	
+</div>
+</div>
+
+
+   <h3 id="hwzq" style="text-align: center;padding-top: 4.5%;padding-bottom:2%;clear: both;"> ——华为专区—— </h3>
+   <a href="#"><img src="img/hw15.jpg" width="80%" style="margin-left: 10%;" /></a>
+ <div class="demo2">
+	 <div style="width:20%;height:100%;float:left;cursor: pointer;">
+		<div class="hwleftdemo" style="width:102.5%;">	
+	  
+	      <img src="img/hw1.jpg" width="100%" height="100%" />
+	
+	    </div>
+		
+	 </div>
+
+	<div class="hwrightdemo" style="width: 80%;height:100%;background:whitesmoke;float: left;">
+		
+	    <div class="hwtopdemo" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<a href="product4.html" style="text-decoration: none;color: black;" target="_blank">
+	    	<img src="img/hw2.jpg" width="100%" height="100%">
+	    	<img src="img/hw7.png" style="position: absolute;margin-left: 11%;margin-top: -3%;"/>
+	    	<p>荣耀10</p>
+	    	<p><small>限时最高优惠400</small></p>
+	    	<p class="redp">¥ 2299</p>
+	    	</a>
+	    </div>
+	    
+	     <div class="hwtopdemo" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/hw3.jpg" width="100%"height="100%">
+	    	<img src="img/hw8.png" style="position: absolute;margin-left: 11%;margin-top: -3%;"/>
+	    	<p>荣耀8X MAX</p>
+	    	<p><small>7.12倍珍珠屏 得双倍积分</small></p>
+	    	<p class="redp">¥ 1499</p>
+	    </div>
+	   
+	   
+	    <div class="hwtopdemo" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/hw14.jpg" width="100%" height="100%">
+	    	<img src="img/hw9.png" style="position: absolute;margin-left: 11%;margin-top: -3%;"/>
+	    	<p>荣耀V10</p>
+	    	<p><small>最高优惠1000元 尊享赠大礼包</small></p>
+	    	<p class="redp">¥ 2099 </p>
+	    </div>
+	   
+	    
+	   <div class="hwtopdemo" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/hw6.jpg" width="100%" height="100%">
+	    	<img src="img/hw11.png" style="position: absolute;margin-left: 11%;margin-top: -3%;"/>
+	    	<p>HUAWEI Mate RS 保时捷设计</p>
+	    	<p><small>6GB+256GB 全网通版（玄黑）</small></p>
+	    	<p class="redp">¥ 9999</p>
+	    </div>
+	  
+	   <div class="hwbottomdemo" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/hw11.jpg" width="100%" height="100%">
+	    	<img src="img/hw8.png" style="position: absolute;margin-left: 11%;margin-top: -3%;"/>
+	    	<p>HUAWEI MateBook X Pro</p>
+	    	<p><small>享6期免息</small></p>
+	    	<p class="redp">¥ 8688</p>
+	    </div>
+	   
+	   
+	    <div class="hwbottomdemo" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/hw16.jpg" width="100%" height="100%">
+	    	<img src="img/hw11.png" style="position: absolute;margin-left: 11%;margin-top: -3%;"/>
+	    	<p>荣耀MagicBook 星云紫</p>
+	    	<p><small>高颜值时尚轻薄本</small></p>
+	    	<p class="redp">¥ 3999</p>
+	    </div>
+	    
+	    
+	   <div class="hwbottomdemo" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/hw13.jpg" width="100%" height="100%">
+	    	<img src="img/hw10.png" style="position: absolute;margin-left: 11%;margin-top: -3%;"/>
+	    	<p>HUAWEI MateBook D</p>
+	    	<p><small>限量赠华为双肩包</small></p>
+	    	<p class="redp">¥ 5188</p>
+	    </div>
+	   
+	   <div class="hwbottomdemo" style="width: 24%;height: 100%;float: left;margin-left: 1%;">
+	    	<img src="img/hw17.jpg" width="100%" height="100%">
+	    	<img src="img/hw11.png" style="position: absolute;margin-left: 11%;margin-top: -3%;"/>
+	    	<p>HUAWEI MateBook X</p>
+	    	<p><small>尊享6期分期免息</small></p>
+	    	<p class="redp">¥ 6188</p>
+	    </div>
+	   
+	   
+    </div>
+</div>
+ <a href="#"> <img src="img/hw23.jpg" width="80%" height="10%" style="margin-left: 10%;margin-top: 2%;" /></a>
+   
+ <div class="demo3" style="clear: both;">
+  	
+  <div style="height: 100%; width:100%;margin-left: 10%;">
+  	
+  	 <div class="service" style="width: 50px;height:50px;border-radius:25px;margin-left: 60px;float: left;">	
+  		
+  	     <p style="font-size: 30px;margin-left: 5px;color: rgb(254,46,95);">优</p>
+  	    <div style="position: absolute;margin-top: -4.5%;margin-left: 4%;">
+  	    	<h4>品质保障</h4>
+  	         <p style="font-size: 17px;color: grey;">品质护航，购物无忧</p>
+  	    </div>
+  	 </div>
+  	 <div class="service" style="width: 50px;height:50px;border-radius:25px;margin-left: 15%;float: left;">	
+  		
+  	     <p style="font-size: 30px;margin-left: 5px;color: rgb(254,46,95);">七</p>
+  	    <div style="position: absolute;margin-top: -4.5%;margin-left: 4%;">
+  	    	<h4>七天无理由退换货</h4>
+  	         <p style="font-size: 17px;color: grey;">为您提供售后无忧保障</p>
+  	    </div>
+  	 </div>
+  	 <div class="service" style="width: 50px;height:50px;border-radius:25px;margin-left: 15%;float: left;">	
+  		
+  	     <p style="font-size: 30px;margin-left: 5px;color: rgb(254,46,95);">特</p>
+  	    <div style="position: absolute;margin-top: -4.5%;margin-left: 4%;">
+  	    	<h4>特色服务体验</h4>
+  	         <p style="font-size: 17px;color: grey;">为您呈现不一样的服务</p>
+  	    </div>
+  	 </div>
+  	 <div class="service" style="width: 50px;height:50px;border-radius:25px;margin-left: 15%;float: left;">	
+  		
+  	     <p style="font-size: 30px;margin-left: 5px;color: rgb(254,46,95);">网</p>
+  	    <div style="position: absolute;margin-top: -4.5%;margin-left: 4%;">
+  	    	<h4>448家维修网点</h4>
+  	         <p style="font-size: 17px;color: grey;">全国联保</p>
+  	    </div>
+  	 </div>
+  	
+  </div>
+  	
+  	<div class="active" style="clear: both;margin-top:3%;">
+  		<hr />
+  
+  		<ul class="footer">
+  			<li><big><b>帮助中心</b></big></li>
+  			<li><a href="#">购物指南</a></li>
+  			<li><a href="#">订单操作</a></li>
+  			<li><a href="#">购物管理</a></li>					 				 	
+  		</ul>
+  		<ul class="footer">
+  			<li><big><b>购物相关</b></big></li>
+  			<li><a href="#">配送方式</a></li>
+  			<li><a href="#">常见问题</a></li>
+  			<li><a href="#">购物指南</a></li>
+  		</ul>	
+  		<ul class="footer">
+  			<li><big><b>保修与退换货</b></big></li>
+  			<li><a href="#">保修政策</a></li>
+  			<li><a href="#">退换货政策</a></li>
+  			<li><a href="#">退换货流程</a></li>
+  			
+  		</ul>
+  		<ul class="footer">
+  			<li><big><b>支付方式</b></big></li>
+  			<li><a href="#">信用卡</a></li>
+  			<li><a href="#">快捷支付</a></li>
+  			<li><a href="#">货到付款</a></li>
+  		</ul>		
+  		<ul class="footer">
+  			<li><big><b>关注我们</b></big></li>
+  			<li><a href="#">新浪微博</a></li>
+  			<li><a href="#">腾讯微博</a></li>
+  			<li><a href="#">官方微信</a></li>
+  			
+  		</ul>
+  		<ul class="footer" style="float: left;margin-top: -1.3%;">
+  			<li><h3 style="color: rgb(255,103,0);">400-800-8820</h3></li>
+  			<li>24小时客服热线(仅收市话费)</li>
+  			<li><a href="#"><div class="lxkf" ><a href="contact.html"><span class="glyphicon glyphicon-comment"></span>联系客服</a></div></a></li>
+  		</ul>		
+  	
+  		
+  	</div>
+  	<div class="wwxk" style="width: 100%;height: 50%;background: rgb(230,230,230);clear: both;padding-left: 10%;padding-top: 3%;padding-bottom: 1%;">
+  		 <p id="wmall"  title="http://www.wmall.com" style="font-size: 30px;font-family: 华文琥珀;color: rgb(140,140,140);cursor: pointer;">WMALL</p>
+  		 <span title="隐私声明" class="spantop colorspan" style="margin-left: 10%;">隐私声明</span>
+  		 <span title="服务协议" class="spantop colorspan" style="margin-left: 14.5%;">服务协议</span>
+  		 <span class="spantop" style="margin-left: 19%;">Copyright © 2012-2018 微商软件技术有限公司</span>
+  		 <span class="spantop" style="margin-left: 41.5%;">版权所有</span>
+  		 <span class="spantop" style="margin-left: 46%;">保留一切权利</span>
+  		  <span class="spanbottom" style="margin-left: 10%;">公安备案</span>
+  		 <span class="spanbottom colorspan" style="margin-left: 14.5%;">苏公网安备32011402010009号</span>
+  		 <span class="spanbottom colorspan" style="margin-left:29.6%;"> 苏ICP备17040376号-6</span>
+  		 <span class="spanbottom" style="margin-left: 41%;">增值电信业务经营许可证：苏B2-20130048号</span>
+  		 <img title="TRUSTe隐私认证" style="float: right;margin-top: -3%;margin-right: 28%;" src="img/ww1.jpg" />
+  		 <img title="电子营业执照" style="float: right;margin-top: -3%;margin-right: 22.5%;" src="img/ww2.png" />
+  		 <img title="可信网站" style="float: right;margin-top: -3%;margin-right: 17%;" src="img/ww3.png" />
+  		 <img title="网络文化经营许可证" style="float: right;margin-top: -3%;margin-right: 11.5%;" src="img/ww4.png" />
+  		
+  	</div>
+  	    <div class="test" style="position:fixed; top:30%; left:95%; width:5%; height:10%; background:white;display: none;">
+  			
+  			 <a id="grzx"><span class="glyphicon glyphicon-user" style="font-size: 30px;"></span>
+  			 	<p>个人中心</p>
+  			 </a>
+  			
+  		</div>
+  			
+  		<div class="test" style="position:fixed; top:40%; left:95%; width:5%; height:10%; background:white;display: none;">
+  			
+  			 <a href="contact.html"><span class="glyphicon glyphicon-headphones" style="font-size: 30px;"></span>
+  			 	<p>联系客服</p>
+  			 </a>
+  			
+  		</div>
+  		<div  class="test" style="position:fixed; top:50%; left:95%; width:5%; height:10%; background:white;display: none;">
+  			
+  			 <a id="gwc" ><span class="glyphicon glyphicon-shopping-cart" style="font-size: 30px;"></span>
+  			 	<p>购物车</p>
+  			 </a>
+  			
+  		</div>
+  		<div class="test" style="position:fixed; top:60%; left:95%; width:5%; height:10%; background:white;display: none;">
+  			
+  			<a onclick="pageScroll()" id="top">
+  				<span class="glyphicon glyphicon-arrow-up" style="font-size: 30px;"></span>
+  				<p>回顶部</p>
+  			</a>
+  			
+  		</div>
+  	    <div class="test1 dh" style="position:fixed; top:40%; left:7%; width:2.5%; height:5%; background:red;display: none;padding-top: 0.4%;">
+  			 <a>
+  			 	 <p>导航</p>
+  			 </a>
+  			
+  		</div>
+  		 <div class="test1 jrth" style="position:fixed; top:45%; left:7%; width:2.5%; height:6%; background:rgb(100,195,51);display: none;">
+  			 <a href="#jrth" style="font-size: 12px;" onclick="scrolls1()">
+  			 	 今日特惠
+  			 </a>
+  			
+  		</div>
+  		<div class="test1 qdsx" style="position:fixed; top:51%; left:7%; width:2.5%; height:6%; background:red;display: none;">
+  			 <a href="#qdsx" style="font-size: 12px;" onclick="scrolls2()">
+  			 	 秋冬上新
+  			 </a>
+  			
+  		</div>
+  		<div class="test1 gjpp" style="position:fixed; top:57%; left:7%; width:2.5%; height:6%; background:rgb(100,195,51);display: none;">
+  			 <a href="#gjpp" style="font-size: 12px;" onclick="scrolls3()">
+  			 	 国际品牌
+  			 </a>
+  			
+  		</div>
+  		<div class="test1 xmzq" style="position:fixed; top:63%; left:7%; width:2.5%; height:6%; background:rgb(98,98,98);display: none;">
+  			 <a href="#xmzq" style="font-size: 12px;" onclick="scrolls4()">
+  			 	 小米专区
+  			 </a>
+  			
+  		</div>
+  		<div class="test1 hwzq" style="position:fixed; top:69%; left:7%; width:2.5%; height:6%; background:rgb(113,21,157);display: none;">
+  			 <a href="#hwzq" style="font-size: 12px;" onclick="scrolls5()">
+  			 	 华为专区
+  			 </a>
+  			
+  		</div>
+  		<div class="fixedsearch" style="position: fixed;background:rgb(250,8,58);z-index: 200;width: 100%;;top: 0%;padding-top: 0.11%;height: 60px;display: none;">
+  			<p  style="font-size: 30px;font-family: 华文琥珀;color: white;margin-left: 10%;margin-top: 0.5%;">WMALL</p>
+  			<input type="text" id="inputproduct"  placeholder="  搜索   商品/品牌" style="float: left;margin-top: -3.2%;width:720px; height:35px;margin-left: 24%;color: black;outline: none;" />
+  			<input id="searchproduct" type="button" style="float: left;margin-top: -3.2%;width: 100px;height: 35px;margin-left: 71.4%;color: white;background: rgb(255,0,54);border: none;" value="搜索"  />
+  			
+  		</div>
+  		<div class="login" style="position: fixed;top: 0%;height: 100%;width: 100%;left: 0%;z-index: 200;background:rgba(105,105,105,0.25);display: none;">
+        	<div class="login" style="position: fixed;top: 6%;height: 90%;width: 33.3%;left: 33.3%;z-index: 200;background:white;">
+        	
+        	
+        	 <div style="width: 100%;height: 5%;background: rgb(165,27,27);">
+        		<span id="closeLogin" class="glyphicon glyphicon-remove" style="color: white;cursor: pointer;padding-top: 2%;margin-left: 95%;font-size: 13px;"></span>
+        	 </div>
+        	 <div class="dlfs">
+        	 	<div class="zhdl" style="float: left;margin-left: 25%;font-size: 20px;cursor: pointer;margin-top: 5%;">账号登录</div>
+        	 	<div style="float: left;margin-top: 5%;margin-left: 9%;font-size: 18px;color: grey;">|</div>
+        	 	<div class="smdl" style="float: right;margin-right: 25%;font-size: 20px;color: rgb(180,7,7);cursor: pointer;margin-top: 5%;">扫码登录</div>
+        	 </div>
+        	<div class="zh" style="text-align: center;display: none;">
+        		<input type="text" id="username" style="margin-top: 10%;height: 35px;width: 300px;border-top:none;border-right: hsl();outline: none;" placeholder="账号/手机号/邮箱" /><br>
+        		<span class="zhts" style="color: rgb(255,51,32);display: none;">请输入您的账号</span><br>
+        		<input type="password" id="password" style="margin-top: 5%;height: 35px;width: 300px;border-top:none;border-right: hsl();outline: none;" placeholder="密码" /><br />
+        		<span class="mmts" style="color: rgb(255,51,32);display: none;">请输入您的密码</span><br>
+        		<span class="glyphicon glyphicon-phone" style="cursor: pointer;color: rgb(0,125,255);margin-top: 2%;margin-right: 38%;font-size: 14px;" title="短信验证码登陆">短信验证码登录</span>
+        		<button id="btn1" class="btn btn-block btn-danger" style="width: 300px;margin-left: 20%;border-radius: 20px;color: white;outline: none;margin-top: 2%;">登录</button><br>
+        		<input title="在公用电脑上不要选择此项，推荐在个人电脑上选择此项" type="checkbox" style="background:red;width: 14px;height: 14px;vertical-align:text-top"><span title="在公用电脑上不要选择此项，推荐在个人电脑上选择此项" style="font-size: 12px;margin-top: 2%;margin-right: 10%;">记住账号</span></input>
+        		<span style="margin-left: 30%;color:rgb(0,125,255);cursor: pointer;">更多</span><br>
+        		<div style="margin-top: 3%;">
+        			<a href="register.html" target="_blank" style="text-decoration: none;color: rgb(0,125,255);font-size: 13px;margin: 2%;padding: 2%;" title="注册账号">注册账号</a><span style="font-size: 12px;">|</span>
+        		<a href="#" style="text-decoration: none;color: rgb(0,125,255);font-size: 13px;margin: 2%;" title="忘记密码？">忘记密码？</a>
+        		</div>
+        		<div style="margin-top: 20%;">
+        		  <p style="color: grey;font-size: 13px;">———————    其他方式登录      ———————</p>
+        		   <img title="QQ" id="qq" src="img/qq.jpg" width="40px" class="img-circle" style="margin-left:1%;cursor: pointer;" />
+        		   <img title="支付宝" id="zfb" src="img/zfb.jpg" width="40px" class="img-circle" style="margin-left: 4%;cursor: pointer;" />
+        		   <img title="微信" id="wechat" src="img/wechat.jpg" width="40px" class="img-circle" style="margin-left: 5%;cursor: pointer;" />
+        		   <p style="font-size: 14px;margin-top: 5%;">继续访问即代表您已同意<a style="text-decoration: none;color: rgb(0,125,255);cursor: pointer;">商城服务协议</a>和<a style="text-decoration: none;color: rgb(0,125,255);cursor: pointer;">隐私政策</a></p>
+        		</div>
+        	</div>
+        	<div class="sm" style="margin-bottom: 0%;height: auto;width: 100%;padding-bottom: 1%;overflow: auto;">
+        		<div class="out" style="width: 100%;height: 100%; clear: both;float: left;margin-top: 10%;padding-bottom: 10%;margin-bottom: 15%;">
+        			<img id="erweima" src="img/sm.png" style="margin-top:10%;margin-left: 35%;border:1px solid black;"/>
+        			<img id="sj" src="img/sys.jpg" width="100px" style="display: none;position: relative;float: right;margin-right: 11%;padding-top: 6%;" />
+        			
+        		</div>
+        		<div style="clear: both;text-align: center;margin-top: 40%;">
+        			<p>使用<span style="color: rgb(0,125,255);">手机APP</span>扫一扫</p>
+        		<p style="font-size: 14px;margin-top: 7%;">继续访问即代表您已同意<a style="text-decoration: none;color: rgb(0,125,255);cursor: pointer;">商城服务协议</a>和<a style="text-decoration: none;color: rgb(0,125,255);cursor: pointer;">隐私政策</a></p> 
+        		</div>
+        		
+            </div>	
+        	
+         </div>
+        	
+        	 
+        	
+        	
+        </div>
+  		
+         
+       
+
+ </div>
+ 
+
+
+
+
+
+ <script src="js/jquery.min.js"></script>
+  <script>
+  	
+  	$('.nav .wzdh').hover(function(){
+  	$($(".wzdh a")[0]).html("网站导航⬆");		
+  	},function(){
+  		$($(".wzdh a")[0]).html("网站导航⬇");
+  	})
+  	
+		
+		$('.nav ul li').hover(function(){
+			$(this).children('ul').slideDown(200)
+			
+		},function(){
+			$(this).children('ul').stop(true,true).slideUp()
+		})
+		$('.nav ul li ul li').hover(function(){
+			$(this).css("background","white")
+		},function(){
+			$(this).css("background","rgb(245,245,245)")
+		})
+		
+  	
+  	//logo跳转
+  	$('#wmall').click(function(){
+  		window.location.href='index.html'
+  	})
+  	//登录框显示
+  	$('#dl').click(function(){
+  		$('.login').show();
+  	})
+  	$('#grzx').click(function(){
+  		$('.login').show();
+  	})
+  	$('#gwc').click(function(){
+  		$('.login').show();
+  	})
+  	$('#topgwc').click(function(){
+  		$('.login').show();
+  	})
+//	$("#btn1").click(function(){
+//		$(this).css("outline","none");
+//	})
+	//关闭登录界面
+  	$('#closeLogin').click(function(){
+  		$('.login').hide();
+  	})
+  	//扫码登录显示
+  	$('.smdl').click(function(){
+  		$('.zh').hide();
+  		$('.zhdl').css("color","black");
+  		$('.smdl').css("color","rgb(180,7,7)")
+  	})
+  	$('#erweima').mouseover(function(){
+  		$(this).stop(true,true).animate({"margin-left":"20%"},500),function(){	
+  		}
+ 
+  		$('#sj').show()
+  	})
+	$('.out').mouseleave(function(){
+		$('#erweima').stop(true,true).animate({"margin-left":"35%"},500),function(){	
+		}
+   
+		$('#sj').hide()
+	})
+	$('.zhdl').hover(function(){
+		$('.zhdl').css("color","rgb(180,7,7)")
+		
+	}
+	)
+	$('.smdl').hover(function(){
+		$('.smdl').css("color","rgb(180,7,7)")
+	})
+  	//账号登陆显示
+  	$('.zhdl').click(function(){
+  		$('.zh').show();
+  		$('.smdl').css("color","black");
+  		$('.zhdl').css("color","rgb(180,7,7)")
+  	})
+  	//其他登录方式js样式
+  	$("#qq").mouseover(function(){
+		var ele=document.getElementById('qq')
+		ele.src="img/qqon.jpg"
+  		
+  	})
+  	$("#qq").mouseout(function(){
+		var ele=document.getElementById('qq')
+		ele.src="img/qq.jpg"
+  		
+  	})
+  	$("#zfb").mouseover(function(){
+		var ele=document.getElementById('zfb')
+		ele.src="img/zfbon.jpg"
+  		
+  	})
+  	$("#zfb").mouseout(function(){
+		var ele=document.getElementById('zfb')
+		ele.src="img/zfb.jpg"
+  		
+  	})
+  	$("#wechat").mouseover(function(){
+		var ele=document.getElementById('wechat')
+		ele.src="img/wechaton.jpg"
+  		
+  	})
+  	$("#wechat").mouseout(function(){
+		var ele=document.getElementById('wechat')
+		ele.src="img/wechat.jpg"
+  		
+  	})
+  //登录js判断
+    $('#btn1').click(function(){
+    	
+    	if($('#username').val()=="")
+    	{
+    		$('.zhts').show();
+    	}
+
+    	if($('#password').val()=="")
+    	{
+    		$('.mmts').show();
+    	}
+
+    	if($('#username').val()==""&&$('#password').val()=="")
+    	{
+    		$('.zhts').show();
+    		$('.mmts').hide();
+    	}
+    	if($('#username').val()!=""&&$('#password').val()!="")
+    	{
+    		 $('.login').hide(); 
+    		 document.getElementById('dl').innerText="Hi,"+$('#username').val();
+    		 $('#tc').show();
+    		 $('#zc').hide();
+    	}
+ 
+    })
+    //注销登陆
+    $('#tc').click(function(){
+    	window.location.href='index.html'
+    })
+    //账号密码提示
+    $('#username').keyup(function(){
+    	if($('#username').val()!="")
+    	 $('.zhts').hide()
+    })
+     $('#password').keyup(function(){
+    	if($('#password').val()!="")
+    	 $('.mmts').hide()
+    })
+    	
+  
+
+
+    
+  	
+  	
+  	//用户登录提醒
+  	function login()
+  	{
+  		alert('您还没有登录，请先登录吧!');
+  	}
+  	//js动态锚点滑动
+  	function scrolls1()
+  	{
+  		$('html, body').animate({scrollTop: $('#jrth').offset().top}, 1000);
+  		
+  	}
+  	function scrolls2()
+  	{
+  		$('html, body').animate({scrollTop: $('#qdsx').offset().top}, 1000);
+  		
+  	}
+  	function scrolls3()
+  	{
+  		$('html, body').animate({scrollTop: $('#gjpp').offset().top}, 1000);
+  		
+  	}
+  	function scrolls4()
+  	{
+  		$('html, body').animate({scrollTop: $('#xmzq').offset().top}, 1000);
+  		
+  	}
+  	function scrolls5()
+  	{
+  		$('html, body').animate({scrollTop: $('#hwzq').offset().top}, 1000);
+  		
+  	}
+  	
+  
+  	//上方导航栏弹出
+  	$('.search1').css('z-index',100)
+  	$(function(){
+    $('.search1').find('.hidemenu').hide(); 
+    
+    $('.search #xmsj').hover(function(){
+        $('.search1').find('#xmsj').stop(true,true).slideDown(400);    
+        },function(){
+        $('.search1').find('#xmsj').stop(true,true).hide();        
+    });    
+});
+    $(function(){
+    $('.search #ds').hover(function(){
+        $('.search1').find('#ds').stop(true,true).slideDown(400);    
+        },function(){
+        $('.search1').find('#ds').stop(true,true).hide();        
+    });    
+});
+    $(function(){
+    $('.search #kt').hover(function(){
+        $('.search1').find('#kt').stop(true,true).slideDown(400);    
+        },function(){
+        $('.search1').find('#kt').stop(true,true).hide();        
+    });    
+});
+    $(function(){
+    $('.search #bjb').hover(function(){
+        $('.search1').find('#bjb').stop(true,true).slideDown(400);    
+        },function(){
+        $('.search1').find('#bjb').stop(true,true).hide();        
+    });    
+});
+    $(function(){
+    $('.search #hwsj').hover(function(){
+        $('.search1').find('#hwsj').stop(true,true).slideDown(400);    
+        },function(){
+        $('.search1').find('#hwsj').stop(true,true).hide();        
+    });    
+});
+    $(function(){
+    $('.search #znjj').hover(function(){
+        $('.search1').find('#znjj').stop(true,true).slideDown(400);    
+        },function(){
+        $('.search1').find('#znjj').stop(true,true).hide();        
+    });    
+});
+  	
+  	
+  	//找相似弹出
+  	$(function(){
+    $('.topdemo2').find('.findsame').hide(); 
+    
+    $('.topdemo2').hover(function(){
+        $(this).find('.findsame').show();    
+        },function(){
+        $(this).find('.findsame').hide();        
+    });    
+});
+	$(function(){
+    $('.bottomdemo2').find('.findsame').hide(); 
+    
+    $('.bottomdemo2').hover(function(){
+        $(this).find('.findsame').show();    
+        },function(){
+        $(this).find('.findsame').hide();        
+    });    
+});
+  	
+//	$('.topdemo2').mouseover(function(){
+//		$('.findsame').show();
+//	});
+//	$('.topdemo2').mouseout(function(){
+//		$('.findsame').hide();
+//	});
+  	//判断显示右侧导航
+  	$(window).scroll(function(){
+  		
+  		var height=$(window).scrollTop();
+  	
+	if(height>400)
+	{
+		 $('.test').fadeIn(1000);
+	}
+	else{
+		$('.test').fadeOut(2000);			
+	}
+      
+  	})
+  	
+  	//搜索栏样式
+  	$('#searchproduct').click(function(){
+  		
+  			if($('#inputproduct').val()=="")
+  		   {
+  			
+  			$('#inputproduct').attr("placeholder",'请输入关键字')
+  			$('#inputproduct').css('border','3px solid rgb(253,189,120)')
+
+  		  }
+  	})
+  	$('#inputproduct').click(function(){
+  		$('#inputproduct').css('border','none')
+  	})
+  	
+   //左侧导航颜色变化
+	$(window).scroll(function(){
+	$('.fixedsearch').hide()	
+	var height=$(window).scrollTop();
+	//顶部搜索栏显示
+	if(height>590)
+	{
+		$('.fixedsearch').show()
+	}
+	else
+	{
+		$('.fixedsearch').hide()
+	}
+	if(height>10)
+	{
+		 $('.test1').slideDown(500);
+	}
+	else{
+		$('.test1').slideUp(500);			
+	}
+	if(height>300&&height<1000)
+	{
+	   $('.jrth').css({'background':'rgb(100,195,51)'});	
+	}
+	else{
+		$('.jrth').css({'background':'rgb(68,68,68)'});
+	}
+	if(height>1000&&height<1800)
+	{
+	   $('.qdsx').css({'background':'red'});	
+	}
+	else{
+		$('.qdsx').css({'background':'rgb(68,68,68)'});
+	}
+	if(height>1800&&height<2500)
+	{
+	   $('.gjpp').css({'background':'rgb(100,195,51)'});	
+	}
+	else{
+		$('.gjpp').css({'background':'rgb(68,68,68)'});
+	}
+	if(height>2500&&height<3400)
+	{
+	   $('.xmzq').css({'background':'rgb(255,68,0)'});	
+	}
+	else{
+		$('.xmzq').css({'background':'rgb(68,68,68)'});
+	}
+	if(height>3400)
+	{
+	   $('.hwzq').css({'background':'rgb(113,21,157)'});	
+	}
+	else{
+		$('.hwzq').css({'background':'rgb(68,68,68)'});
+	}
+
+      
+	})
+	
+	
+	
+	
+  	//返回顶部
+  	function pageScroll(){
+    //把内容滚动指定的像素数（第一个参数是向右滚动的像素数，第二个参数是向下滚动的像素数）
+    window.scrollBy(0,-100);
+    //延时递归调用，模拟滚动向上效果
+    scrolldelay = setTimeout('pageScroll()',20);
+    //获取scrollTop值，声明了DTD的标准网页取document.documentElement.scrollTop，否则取document.body.scrollTop；因为二者只有一个会生效，另一个就恒为0，所以取和值可以得到网页的真正的scrollTop值
+    var sTop=document.documentElement.scrollTop+document.body.scrollTop;
+    //判断当页面到达顶部，取消延时代码（否则页面滚动到顶部会无法再向下正常浏览页面）
+    if(sTop==0) clearTimeout(scrolldelay);
+}
+  	
+  	//鼠标移上图片上移
+  	 $('.hwtopdemo').hover(
+      function(){
+        $(this).animate({
+        	'margin-top':'-0.5%'
+        },200);
+      },function(){
+        $(this).animate({
+        	'margin-top':'0'
+        },200)
+      }
+      );
+      $('.hwbottomdemo').hover(
+      function(){
+        $(this).animate({
+        	'margin-top':'-0.5%'
+        },200);
+      },function(){
+        $(this).animate({
+        	'margin-top':'0'
+        },200)
+      }
+      );
+     $('.hwleftdemo').hover(
+      function(){
+        $(this).animate({
+        	'margin-top':'-2%'
+        },200);
+      },function(){
+        $(this).animate({
+        	'margin-top':'0'
+        },200)
+      }
+      );
+  	
+  	
+  	//评价弹出
+ 	$(function(){
+    $('.xmdemo').find('.hidediv').hide(); 
+    
+    $('.xmdemo').hover(function(){
+        $(this).find('.hidediv').stop(true,true).slideDown();    
+        },function(){
+        $(this).find('.hidediv').stop(true,true).slideUp(100);        
+    });    
+});
+
+   $('.colors').hover(function(){
+   	$('.colorp').css("color","rgb(255,0,69)")
+   },function(){
+   	$('.colorp').css("color","black")
+   })
+
+    
+   	$(function () {
+    $(".dropdown").mouseover(function () {
+        $(this).addClass("open");
+    });
+
+    $(".dropdown").mouseleave(function(){
+        $(this).removeClass("open");
+    })
+
+})
+  	
+   </script>
+	
+	</body>
+</html>

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>服务</title>
+		<style>
+	.nav{
+	background: rgb(245,245,245);
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	}
+	.nav a{
+	font-size: 13px;
+	text-decoration: none;
+	color:rgb(108,108,108);
+	
+	}
+	.nav ul li {
+		list-style: none;
+		float: left;
+		width: 80px;
+		margin-left: 1.5%;
+	
+	}
+	
+	ul li ul{
+		position: absolute;
+		z-index: 20;
+		left: 31%;
+		margin-top:0.1%;
+		width: 800px;
+		height: 80px;
+		display: none;
+	}
+	.nav ul li ul li{
+		display: block;
+		width: 200px;
+		height:40px;
+		padding-top:1.5%;
+		border: 1px solid rgb(238,238,238);
+		background: whitesmoke;
+		text-align: center;
+		margin-left: 0.5%;
+	}
+			ul li ul li:hover{
+				cursor: pointer;
+				
+			}
+			.nav a:hover{
+			color:rgb(255,68,0);
+			text-decoration: none;
+			}
+		  .top{
+			  background: rgb(67,98,140);
+			  padding-left: 17%;
+			  padding-top: 1%;
+			  padding-bottom: 10%;
+		  }
+		 
+		   .topimg1{
+		  			  position: absolute;
+		  			  border-radius: 2%;
+		  			  z-index: 10;
+		  			  left: 20%;
+		  			  margin-top: -8%;
+		  			  background: white;
+		  			  width: 15%;
+					  min-height: 30%;
+		  			  height: 30%;
+		  			  text-align: center;
+		  			  padding:2%;
+					  
+		  
+		  		  }
+		  		  .topimg1 h1{
+		  			  color: black;
+		  			  font-size: 18px;
+		  			  letter-spacing: 1px;
+		  		  }
+		  		  .topimg1 p{
+		  			  color:rgb(153,153,153);
+		  			  letter-spacing: 1px;
+		  			  font-size: 14px;
+		  
+		  		  }
+				   .topimg2{
+					   clear: both;
+				  			  position: absolute;
+				  			  border-radius: 2%;
+				  			  z-index: 10;
+				  			  left: 40%;
+				  			  margin-top: -8%;
+				  			  background: white;
+				  			  width: 15%;
+				  			  height: 30%;
+				  			  text-align: center;
+				  			  padding:2%;
+				  
+				  		  }
+				  		  .topimg2 h1{
+				  			  color: black;
+				  			  font-size: 18px;
+				  			  letter-spacing: 1px;
+				  		  }
+				  		  .topimg2 p{
+				  			  color:rgb(153,153,153);
+				  			  letter-spacing: 1px;
+				  			  font-size: 14px;
+				  
+				  		  }
+						  
+			 .topimg3{
+						  position: absolute;
+						  border-radius: 2%;
+						  z-index: 10;
+						  left: 60%;
+						  margin-top: -8%;
+						  background: white;
+						  width: 15%;
+						  height: 30%;
+						  text-align: center;
+						  padding:2%;
+			
+					  }
+					  .topimg3 h1{
+						  color: black;
+						  font-size: 18px;
+						  letter-spacing: 1px;
+					  }
+					  .topimg3 p{
+						  color:rgb(153,153,153);
+						  letter-spacing: 1px;
+						  font-size: 14px;
+			
+					  }
+					 
+					  .middlediv{
+						  z-index: 1;
+						  clear: both;
+						  background: rgb(238,238,238);
+						  height: auto;
+						  padding-top: 9%;
+					  }
+					  button{
+						  height: 40px;
+						  background: rgb(87,164,255);
+						  outline: none;
+						  border: none;
+						  width: 70px;
+						  border-top-right-radius: 20px;
+						  border-bottom-right-radius: 20px;
+						 
+					  }
+						button:hover{
+							background: rgba(87,164,255,0.8);
+						}
+					.serbox{
+						width: 70%;
+						margin: 1% 15% 1% 15%;
+						background: rgb(238,238,238);
+					}
+					
+					table{
+						letter-spacing: 4px;
+						margin-left: 20%;
+						width: 200%;
+						table-layout: fixed;
+						height: 300px;
+						text-align: center;
+					}
+					table  td{
+						text-align: center;
+						width: 200%;
+						
+					}
+				 table	th{
+					
+						text-align: center;
+					}
+					.tleft{
+						padding-left: 30px;
+						text-align: left;
+						
+					}
+					#mybtn{
+						width: 300px;
+						height: 40px;
+						border-radius: 50px;
+						outline: none;
+						background: rgb(87,164,255);
+						border: none;
+						margin-top: 1%;
+						margin-bottom: 4%;
+						margin-left: 35%;
+					}
+					#mybtn:hover{
+						background: rgba(87,164,255,0.8);
+					}
+				.question{
+					clear: both;
+					width: 100%;
+					height: auto;
+					position: absolute;
+					background: rgb(247,247,247);
+					margin-top: -1%;
+					padding-top: 2%;
+					padding-left: 19%;
+				}
+				.hotquestion{
+					width: 22%;
+					float: left;
+					background: white;
+					height: auto;
+					margin-left: 3%;
+					margin-top: 2%;
+					border-radius: 8px;
+					z-index: 100;
+					border: 1px solid white;
+					cursor: pointer;
+					
+				}
+				.hotquestion p{
+					padding-top: 10%;
+					padding-left: 10%;
+					padding-bottom: 10%;
+				}
+				.hotquestion img{
+					margin-left: 10%;
+					padding-bottom:2%;
+				}
+				.hotquestion span{
+					float: right;
+					margin-right: 20px;
+					margin-top: 10px;
+					font-size: 13px;
+					color: rgb(153,153,153);
+				}
+				.person{
+					clear: both;
+					padding-top: 2%;
+					
+				}
+				.person a{
+					margin-top: 2%;
+					float: left;
+					margin-right: 4%;
+					margin-left: 6%;
+					text-align: center;
+					text-decoration: none;
+					color: rgb(153,153,153);
+					margin-bottom: 0%;
+				}
+				.person img{
+					border: 3px solid rgb(221,221,221);
+				}
+				
+				.person a:hover{
+					text-decoration: none;
+				}
+				.person input{
+				
+					width: 300px;
+					height: 40px;
+				  clear: both;
+					border-radius: 50px;
+					outline: none;
+					color: white;
+					background: rgb(87,164,255);
+					border: none;
+					margin-top: 5%;
+					margin-bottom: 4%;
+					margin-left: 25%;
+					
+				}
+				.askquestion:hover{
+					background: rgba(87,164,255,0.8);
+				}
+				.bottomdiv{
+					padding-top: 3%;
+					clear: both;
+					color: white;
+					padding-left: 28%;
+				  background: rgb(87,164,255);
+				  margin-left: -25%;
+					width: 125%;
+					height: auto;
+					padding-bottom: 3%;
+				}
+				.bottomdiv a{
+					color: white;
+				}
+				.bottomdiv a:hover{
+					color: white;
+				}
+		</style>
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+		<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/editTable.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/editTable.js"></script>
+
+	</head>
+	
+	<body>
+		<div class="nav">
+			<ul>
+				<li><a href="index.html" style="margin-left: 10%;">首页</a></li>
+				<li><a href="#" style="margin-left: 1%;">商品分类</a></li>
+				<li><a href="#" style="margin-left: 1%;">商家支持</a></li>
+				<li><a href="#" style="margin-left: 1%;">粉丝俱乐部</a></li>
+				<li><a href="service.html" style="margin-left: 1%;">帮助中心</a></li>
+				<li  class="wzdh">
+					<a id="wzdh" href="#" style="margin-left: 0%;">网站导航⬇</a>
+					<ul>
+						 <a href="http://www.baidu.com"><li>百度</li></a>
+						 <a href="http://www.qq.com"><li>腾讯网</li></a>
+						 <a href="http://www.tmall.com"><li>天猫</li></a>
+						 <a href="http://www.taobao.com"><li>淘宝</li></a>
+						 <a href="http://www.jd.com"><li>京东</li></a>
+						 <a href="http://www.xiaomi.com"><li>小米</li></a>
+						 <a href="http://www.vmall.com"><li>华为</li></a>
+						 <a href="http://www.gome.com.cn"><li>国美</li></a>
+						 <a href="http://www.sina.com"><li>新浪</li></a>
+						 <a href="http://www.douyu.com"><li>斗鱼</li></a>
+						 <a href="http://www.huya.com"><li>虎牙</li></a>
+						 <a href="http://www.bilibili.com"><li>哔哩哔哩</li></a>
+					</ul>
+					</li>
+				<li><a href="#" style="margin-left: 1%;">更多精彩</a></li>
+				<li><a href="#" style="margin-left: 1%;">手机版</a></li>
+				<li><a id="dl" href="#" style="margin-left: 31%;">登录</a></li>
+				<li><a id="tc" href="#" style="margin-left: 1%;display: none;">退出</a></li>
+				<li><a id="zc" href="register.html" target="_blank" style="margin-left: 1%;">注册</a></li>
+				<li><a href="#" style="margin-left: 1%;">我的订单</a></li>
+				<li><a id="topgwc" href="#" style="margin-left: 1%;"><span class="glyphicon glyphicon-shopping-cart"></span>购物车</a></li>	
+			</ul>
+		
+		
+		</div>
+		
+
+	<div class="top">
+		<span style="color: white;font-size: 38px;padding: 0.5%;">微商城</span>
+		<span style="color: white;font-size: 30px;padding: 0.5%;">/</span>
+	   <span style="color: white;font-size: 28px;">服务中心</span>
+	   <span id="greet" style="color: rgba(255,255,255,0.7);font-size: 20px;margin-left: 5%;letter-spacing: 2px;"></span>
+	  
+	
+	</div>
+	<a href="#" style="text-decoration: none;">
+	<div class="topimg1">
+		<div style="border: 0px dotted black;border-radius: 40px;width:80px;height:80px;padding: 2%;background: rgb(218,240,254);margin-left: 42px;"><img class="img-circle" src="img/s1.png" width="100%" /></div>
+		<p class="hidep" style="color: white;font-size: 20px;margin-top: 38px;display: none;">点击进入微商万象</p>
+		<h1 class="showp">微商万象</h1>
+		<p class="showp">商家智能服务助理</p>
+		
+	</div>
+	</a>
+	<a href="#" style="text-decoration: none;">
+	<div class="topimg2">
+		<div style="border: 0px dotted black;border-radius: 40px;width:80px;height:80px;padding: 2%;background: rgb(178,223,158);margin-left: 42px;"><img class="img-circle" src="img/s2.png" width="100%" /></div>
+		<p class="hidep" style="color: white;font-size: 20px;margin-top: 38px;display: none;">点击进入知识学习</p>
+		<h1 class="showp">知识学习</h1>
+		<p class="showp">简单问题自助快速解决</p>
+	</div>
+	</a>
+	<a href="#" style="text-decoration: none;">
+	<div class="topimg3">
+		<div style="border: 0px dotted black;border-radius: 40px;width:80px;height:80px;padding: 2%;background: rgb(236,190,91);margin-left: 42px;"><img class="img-circle" src="img/s3.png" width="100%" /></div>
+		<p class="hidep" style="color: white;font-size: 20px;margin-top: 38px;display: none;">点击进入社区问答</p>
+		<h1 class="showp">问商友</h1>
+		<p class="showp">800万商家互相帮助</p>
+	</div>
+	</a>
+	
+	<div class="middlediv" >
+		<span style="margin-left: 45%;">—</span>
+		<span id="search1">搜索知识</span>
+		<span>—</span><br />
+		<a href="#search1"  onclick="scrolls6()"><input  type="text" placeholder="用一句话描述您的问题,比如:怎么退货？" style="width:400px;height: 40px;margin-left: 32%;border-top-left-radius: 20px;outline:none;padding-left: 20px;border: 1px solid rgb(31,140,255);margin-top: 1%;" /></a>
+		<button ><span class="glyphicon glyphicon-search" style="color: white;"></span></button><br />
+		<br />
+		<a href="#" style="margin-left: 33%;color: rgb(102,102,102);font-size: 12px;">我要申诉</a>
+		<a href="#" style="margin-left: 1%;color: rgb(102,102,102);font-size: 12px;">报名活动</a>
+		<a href="#" style="margin-left: 1%;color: rgb(102,102,102);font-size: 12px;">退款</a>
+		<a href="#" style="margin-left: 1%;color: rgb(102,102,102);font-size: 12px;">消保</a><br />
+		<br />
+		
+		<span style="margin-left: 45%;">—</span>
+			<span>自助服务</span>
+			<span>—</span><br />
+		<div  class="serbox">
+			
+				<table>
+						<thead>
+							<tr>
+								<th colspan="2">鼠标点击右边表格填写信息</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>请填写以下问题</th>
+								<th>*为必填内容</th>
+							</tr>
+							<tr>
+								<tr>
+									<td>您的微账号</td>
+									<td class="tleft">*</td>
+								</tr>
+								<td>您的姓名</td>
+								<td class="tleft">*</td>
+							</tr>
+							<tr>
+								<td>您的电话</td>
+								<td class="tleft">*</td>
+							</tr>
+							<tr>
+								<td>您的住址</td>
+								<td class="tleft">*</td>
+							</tr>
+							<tr>
+								<td>您的问题</td>
+								<td class="tleft">*</td>
+							</tr>
+							<tr>
+								<td>服务反馈</td>
+								<td class="tleft"></td>
+							</tr>
+							
+							
+							
+						</tbody>
+						
+					</table>
+					<input id="mybtn" type="button" onclick="return confirm('即将返回首页，是否继续？')"  value="提交" />
+			
+			
+			
+		</div>
+		  
+		
+	
+	</div>
+	
+		<div class="question">
+			<span style="margin-left: 30%">—</span>
+			<span>近期社区热门问题</span>
+			<span>—</span><br />
+			<div class="hotquestion">
+				 <p>平价的清新口气的杀菌的漱口水</p>
+				 <img class="img-circle" src="img/p1.png" width="15%" />
+				 <span>0个回答</span>
+			</div>
+			<div class="hotquestion">
+				<p>怎样用手机拍摄专业的产品视频？</p>
+				<img class="img-circle" src="img/p2.jpg" width="15%" />
+				<span>6个回答</span>
+
+			</div>
+			<div class="hotquestion">
+				<p>买家恶意行为怎么办？</p>
+				<img class="img-circle" src="img/wechaton.jpg" width="15%" />
+				<span>324个回答</span>
+
+			</div>
+			
+			<div class="person">	
+			 <br />
+			 <span style="margin-left: 29%;">—</span>
+			 <span>近期社区热门优秀贡献者</span>
+			 <span>—</span><br />
+			  <a href="#">
+					<img class="img-circle" src="img/p3.jpg" />
+					<br />
+					<br />
+					<span>湛黄帝</span>
+				</a>
+					<a href="#">
+						<img class="img-circle" src="img/p4.jpg" />
+						<br />
+						<br />
+						<span>青蛙or猴子</span>
+					</a>
+						<a href="#">
+							<img class="img-circle" src="img/p5.jpg" />
+							<br />
+							<br />
+							<span>淘喜欢</span>
+						</a>
+							<a href="#">
+								<img class="img-circle" src="img/p6.jpg" />
+								<br />
+								<br />
+								<span>卡洛莱旗舰店</span>
+							</a>
+					
+					<input class="askquestion" type="button" value="去社区提问" />
+
+					
+			</div>
+			
+			  <div class="bottomdiv">
+			  			<h3>常见知识</h3>
+							
+							<a href="#">微商城商家在线服务已经开通咯！</a><br />
+							<a href="#">[订单]买家申请售后维权流程示意图</a><br />
+							<a href="#">买家申请售后维权流程示意图</a><br />
+							<a href="#">[订单]退货或换货邮费该由谁承担？</a><br />
+							<a href="#">买家如何申请延迟发货赔付？</a><br />
+			  </div>
+		</div> 
+		
+		
+
+
+		
+
+ <script>
+	 
+	 $('.nav .wzdh').hover(function(){
+	 $($(".wzdh a")[0]).html("网站导航⬆");		
+	 },function(){
+	 	$($(".wzdh a")[0]).html("网站导航⬇");
+	 })
+	 
+	 $('.person a').hover(function(){
+		 $(this).css("color","rgb(87,164,255)")
+		 $(this).children('img').css("border","3px solid rgb(87,164,255)")
+	 },function(){
+		 $(this).css("color","rgb(153,153,153)")
+		 $(this).children('img').css("border","3px solid rgb(221,221,221)")
+	 })
+	 
+	 
+	 
+	 
+	 $('.hotquestion').hover(function(){
+		  $(this).css("border","1px solid rgb(87,164,255)")
+	 },function(){
+		 $(this).css("border","1px solid white")
+	 })
+	 
+	 function scrolls6()
+	 {
+	 	$('html, body').animate({scrollTop: $('#search1').offset().top}, 1000);
+	 	
+	 }
+	 
+	 
+	 $('.nav ul li').hover(function(){
+		 $(this).children('ul').slideDown(200)
+		 
+	 },function(){
+		 $(this).children('ul').stop(true,true).slideUp()
+	 })
+	 $('.nav ul li ul li').hover(function(){
+		 $(this).css("background","white")
+	 },function(){
+		 $(this).css("background","rgb(245,245,245)")
+	 })
+	 
+	 $(document).ready(function(){
+		 var greet=document.getElementById('greet');
+		 var date=new Date();
+		 var h=date.getHours();
+		 if(h>5&&h<11)
+		 {
+			 document.getElementById('greet').innerText="早上好，有什么可以帮助您？"
+		 }
+		 else if(h<13)
+		 {
+			 document.getElementById('greet').innerText="中午好，有什么可以帮助您？"
+		 }
+		 else if(h<18)
+		 {
+			 document.getElementById('greet').innerText="下午好，有什么可以帮助您？"
+		 }
+		 else
+		 {
+			 document.getElementById('greet').innerText="晚上好，有什么可以帮助您？"
+
+		 }
+		
+	 })
+	
+	 
+	 $('.topimg1').hover(function(){
+		 $(this).css("background","rgb(87,164,255)");
+		 $('.topimg1 .showp').hide()
+		 $('.topimg1 .hidep').show();
+	 },function(){
+		 $(this).css("background","white");
+		 $('.showp').show();
+		 $('.hidep').hide();
+	 })
+	 
+	 $('.topimg2').hover(function(){
+	 	$(this).css("background","rgb(136,203,91)");
+		
+	 	$('.topimg2 .showp').hide()
+	 	$('.topimg2 .hidep').show();
+	 },function(){
+	 	$(this).css("background","white");
+	 	$('.topimg2 .showp').show();
+	 	$('.topimg2 .hidep').hide();
+	 })
+	 
+	 $('.topimg3').hover(function(){
+	 $(this).css("background","rgb(234,178,78)");
+	 $('.topimg3 .showp').hide()
+	 $('.topimg3 .hidep').show();
+	 },function(){
+	 $(this).css("background","white");
+	 $('.topimg3 .showp').show();
+	 $('.topimg3 .hidep').hide();
+	 })
+	 
+	 $('.circle').hover(function(){
+		 $(this).css("background","rgb(87,164,255)")
+		 $(this).children('span').css("color","white")
+		 $(this).parent('a').css("color","rgb(87,164,255)")
+	 },function(){
+		$(this).css("background","white")
+		$(this).children('span').css("color","rgb(87,164,255)")
+		$(this).parent('a').css("color","black") 
+	 })
+ 
+  
+ 
+  $('#mybtn').click(function(){
+  		if($('.tleft').val()=="*")
+			{
+				alert("请填写完整信息")
+			}
+			else
+			{
+					window.location.href="index.html"
+			}
+  })
+  
+ </script>
+	</body>
+</html>
